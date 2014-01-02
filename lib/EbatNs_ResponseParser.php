@@ -401,7 +401,7 @@ class EbatNs_ResponseParser
             
             if ($infoMember)
             {
-                list ($lower, $upper) = explode("\.\.", $infoMember['cardinality']);
+                list ($lower, $upper) = mb_split("\.\.", $infoMember['cardinality']);
                 if ($upper == '*' || $upper > 1)
                 {
                     if ($this->_options['NO_EMPTY_ARRAYS'] &&

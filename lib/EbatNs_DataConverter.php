@@ -63,8 +63,8 @@ class EbatNs_DataConverterIso extends EbatNs_DataConverter
                 return utf8_decode($data);
             case 'dateTime':
                 {
-                    $dPieces = split('T', $data);
-                    $tPieces = split("\.", $dPieces[1]);
+                    $dPieces = mb_split('T', $data);
+                    $tPieces = mb_split("\.", $dPieces[1]);
                     $data = $dPieces[0] . ' ' . $tPieces[0];
                     // return date('Y-m-d H:i:s', strtotime($data) + date('Z'));
                     return $data;

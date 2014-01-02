@@ -298,7 +298,7 @@ class EbatNs_Client
 	
 	protected function _startTp( $key )
 	{
-		if (!$this->_loggingOptions['LOG_TIMEPOINTS'])
+		if (!isset($this->_loggingOptions['LOG_TIMEPOINTS']))
 			return;
 		
 		if ( isset( $this->_timePoints[$key] ) )
@@ -312,7 +312,7 @@ class EbatNs_Client
 	
 	protected function _stopTp( $key )
 	{
-		if (!$this->_loggingOptions['LOG_TIMEPOINTS'])
+		if (!isset($this->_loggingOptions['LOG_TIMEPOINTS']))
 			return;
 		
 		if ( isset( $this->_timePoints[$key]['start'] ) )
@@ -326,7 +326,7 @@ class EbatNs_Client
 	
 	protected function _logTp()
 	{
-		if (!$this->_loggingOptions['LOG_TIMEPOINTS'])
+		if (!isset($this->_loggingOptions['LOG_TIMEPOINTS']))
 			return;
 		
 		// log the timepoint-information
@@ -345,7 +345,7 @@ class EbatNs_Client
 	// callusage
 	protected function _incrementApiUsage($apiCall)
 	{
-		if (!$this->_loggingOptions['LOG_API_USAGE'])	
+		if (!isset($this->_loggingOptions['LOG_API_USAGE']))	
 			return;
 		
 		$this->_callUsage[$apiCall] = $this->_callUsage[$apiCall] + 1;
@@ -618,7 +618,7 @@ class EbatNs_Client
 			// for your own in PHP 4.x or switch to PHP 5.x 
 		}
 		
-		if ($this->_transportOptions['HTTP_VERBOSE'])
+		if (isset($this->_transportOptions['HTTP_VERBOSE']))
 		{
 			curl_setopt( $ch, CURLOPT_VERBOSE, 1 );
 			ob_start();

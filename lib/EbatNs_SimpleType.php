@@ -137,7 +137,7 @@ class EbatNs_SimpleType
 		    foreach ($thisObj->getProperties() as $property)
 		    {
 				$member = $property->getName();
-		        $value  = $this->{$member}; 
+		        $value  = isset($this->{$member}) ? $this->{$member} : null; 
 		        if ($member[0] == '_' || ($value === null))
 				    unset($this->{$member});
 		    }

@@ -48,7 +48,7 @@ class GetOrdersResponseType extends AbstractResponseType
 	{
 		return $this->PaginationResult;
 	}
-	/**
+	/**su
 	 * @return void
 	 * @param PaginationResultType $value 
 	 */
