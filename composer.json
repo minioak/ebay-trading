@@ -1,0 +1,22 @@
+{
+	"name": "minioak/amazon-mws",
+	"type": "library",
+	"license": "BSD",
+	"description": "eBay Trading PHP SDK",
+	"keywords": ["ebay", "trading"],
+	"minimum-stability": "dev",
+	"authors": [
+		{
+		"name": "John Mitchell",
+		"homepage": "http://www.minioak.com"
+		}
+	],
+	
+	"require": {
+		"php": ">=5.3.2"
+	},
+	
+	"autoload": {
+		"classmap": [ "lib/" ]
+	}
+}
