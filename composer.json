@@ -1,5 +1,5 @@
 {
-	"name": "minioak/amazon-mws",
+	"name": "minioak/ebay-trading",
 	"type": "library",
 	"license": "LGPL-2.1+",
 	"description": "eBay Trading PHP SDK",
