@@ -1,7 +1,7 @@
 {
 	"name": "minioak/amazon-mws",
 	"type": "library",
-	"license": "BSD",
+	"license": "LGPL-2.1+",
 	"description": "eBay Trading PHP SDK",
 	"keywords": ["ebay", "trading"],
 	"minimum-stability": "dev",
