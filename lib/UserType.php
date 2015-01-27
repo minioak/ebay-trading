@@ -201,6 +201,14 @@ class UserType extends EbatNs_ComplexType
 	 * @var string
 	 */
 	protected $StaticAlias;
+	/**
+	 * @var string
+	 */
+	protected $UserFirstName;
+	/**
+	 * @var string
+	 */
+	protected $UserLastName;
 
 	/**
 	 * @return boolean
@@ -868,6 +876,38 @@ class UserType extends EbatNs_ComplexType
 	{
 		$this->StaticAlias = $value;
 	}
+	
+	/**
+	 * @return string
+	 */
+	function getUserFirstName()
+	{
+		return $this->UserFirstName;
+	}
+	/**
+	 * @return void
+	 * @param string $value 
+	 */
+	function setUserFirstName($value)
+	{
+		$this->UserFirstName = $value;
+	}
+	
+	/**
+	 * @return string
+	 */
+	function getUserLastName()
+	{
+		return $this->UserLastName;
+	}
+	/**
+	 * @return void
+	 * @param string $value 
+	 */
+	function setUserLastName($value)
+	{
+		$this->UserLastName = $value;
+	}
 	/**
 	 * @return 
 	 */
@@ -1206,6 +1246,22 @@ class UserType extends EbatNs_ComplexType
 						'cardinality' => '0..1'
 					),
 					'StaticAlias' =>
+					array(
+						'required' => false,
+						'type' => 'string',
+						'nsURI' => 'http://www.w3.org/2001/XMLSchema',
+						'array' => false,
+						'cardinality' => '0..1'
+					),
+					'UserFirstName' =>
+					array(
+						'required' => false,
+						'type' => 'string',
+						'nsURI' => 'http://www.w3.org/2001/XMLSchema',
+						'array' => false,
+						'cardinality' => '0..1'
+					),
+					'UserLastName' =>
 					array(
 						'required' => false,
 						'type' => 'string',
