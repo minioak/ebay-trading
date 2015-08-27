@@ -634,7 +634,7 @@ class EbatNs_Client
 			// for your own in PHP 4.x or switch to PHP 5.x 
 		}
 		
-		if ($this->_transportOptions['HTTP_VERBOSE'])
+		if (isset($this->_transportOptions['HTTP_VERBOSE']))
 		{
 			curl_setopt( $ch, CURLOPT_VERBOSE, 1 );
 			ob_start();
