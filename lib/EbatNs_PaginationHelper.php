@@ -1,6 +1,9 @@
 <?php
-// $Id: EbatNs_PaginationHelper.php,v 1.2 2008-05-02 15:04:05 carsten Exp $
+// $Id: EbatNs_PaginationHelper.php,v 1.2 2013-04-05 11:15:51 thomasbiniasch Exp $
 // $Log: EbatNs_PaginationHelper.php,v $
+// Revision 1.2  2013-04-05 11:15:51  thomasbiniasch
+// bugfixes and template updates, first running version milestone!
+//
 // Revision 1.2  2008-05-02 15:04:05  carsten
 // Initial, PHP5
 //
@@ -106,7 +109,8 @@ class EbatNs_PaginationHelper
         $this->_request->Pagination->PageNumber ++;
         
         // calling the proxy method for this api-call
-        $res = call_user_method($this->_callname, $this->_proxy, $this->_request);
+        //$res = call_user_method($this->_callname, $this->_proxy, $this->_request);
+        $res = call_user_func(array($this->_proxy, $this->_callname), $this->_request);
         if ($bFirst)
         {
             $this->_accumulatedResponse = $res;

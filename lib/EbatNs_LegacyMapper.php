@@ -1,6 +1,9 @@
 <?php 
-// $Id: EbatNs_LegacyMapper.php,v 1.2 2008-05-02 15:04:05 carsten Exp $
+// $Id: EbatNs_LegacyMapper.php,v 1.2 2013-04-05 11:16:00 thomasbiniasch Exp $
 // $Log: EbatNs_LegacyMapper.php,v $
+// Revision 1.2  2013-04-05 11:16:00  thomasbiniasch
+// bugfixes and template updates, first running version milestone!
+//
 // Revision 1.2  2008-05-02 15:04:05  carsten
 // Initial, PHP5
 //
@@ -45,7 +48,7 @@
  * @package EbatNs
  * @author Carsten Harnisch 
  * @copyright Copyright (c) 2005, IntradeSys Limited
- * @version $Id: EbatNs_LegacyMapper.php,v 1.2 2008-05-02 15:04:05 carsten Exp $
+ * @version $Id: EbatNs_LegacyMapper.php,v 1.2 2013-04-05 11:16:00 thomasbiniasch Exp $
  * @access public 
  */
 class EbatNs_MapExpression
@@ -271,7 +274,7 @@ class EbatNs_MapExpression
  * @package EbatNs
  * @author Carsten Harnisch 
  * @copyright Copyright (c) 2005, IntradeSys Limited
- * @version $Id: EbatNs_LegacyMapper.php,v 1.2 2008-05-02 15:04:05 carsten Exp $
+ * @version $Id: EbatNs_LegacyMapper.php,v 1.2 2013-04-05 11:16:00 thomasbiniasch Exp $
  * @access public 
  */
 class EbatNs_MapTarget
@@ -452,7 +455,7 @@ class EbatNs_MapTarget
  * @package easylister
  * @author michael 
  * @copyright Copyright (c) 2005
- * @version $Id: EbatNs_LegacyMapper.php,v 1.2 2008-05-02 15:04:05 carsten Exp $
+ * @version $Id: EbatNs_LegacyMapper.php,v 1.2 2013-04-05 11:16:00 thomasbiniasch Exp $
  * @access public 
  */
 class EbatNs_MapMapping
@@ -511,7 +514,7 @@ class EbatNs_MapMapping
  * @package easylister
  * @author michael 
  * @copyright Copyright (c) 2005
- * @version $Id: EbatNs_LegacyMapper.php,v 1.2 2008-05-02 15:04:05 carsten Exp $
+ * @version $Id: EbatNs_LegacyMapper.php,v 1.2 2013-04-05 11:16:00 thomasbiniasch Exp $
  * @access public 
  */
 class EbatNs_LegacyMapper

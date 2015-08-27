@@ -1,6 +1,15 @@
 <?php 
-// $Id: EbatNs_Session.php,v 1.4 2008-06-09 10:29:36 michael Exp $
+// $Id: EbatNs_Session.php,v 1.1.2.2 2015-01-09 15:30:04 michaelcoslar Exp $
 // $Log: EbatNs_Session.php,v $
+// Revision 1.1.2.2  2015-01-09 15:30:04  michaelcoslar
+// added handling for OAuth as authentication type
+//
+// Revision 1.1.2.1  2015-01-09 09:50:27  michaelcoslar
+// initial checkin
+//
+// Revision 1.2  2013-04-05 11:15:55  thomasbiniasch
+// bugfixes and template updates, first running version milestone!
+//
 // Revision 1.4  2008-06-09 10:29:36  michael
 // *** empty log message ***
 //
@@ -455,6 +464,28 @@ class EbatNs_Session {
     $this->_props['TokenUsePickupFile'] = $value;
   }
   /**
+   * Read accessor of AuthType.
+   * 
+   * @access public 
+   * @return string Value of the AuthType property
+   */
+  function getAuthType()
+  {
+    return $this->_props['AuthType'];
+  }
+  /**
+   * Write accessor of AuthType.
+   * EBAY_AUTHTYPE_AUTHNAUTH = authnauth
+   * EBAY_AUTHTYPE_OAUTH = oauth
+   * @access public 
+   * @param string $value The new value for the AuthType property
+   * @return void 
+   */
+  function setAuthType($value)
+  {
+    $this->_props['AuthType'] = $value;
+  }
+  /**
    * Read accessor of ApiUrl.
    * returns the API Url
    * 
@@ -852,6 +883,7 @@ class EbatNs_Session {
     $this->_props['TokenMode'] = false;
     $this->_props['TokenPickupFile'] = EBAY_NOTHING;
     $this->_props['TokenUsePickupFile'] = false;
+    $this->_props['AuthType'] = EBAY_AUTHTYPE_AUTHNAUTH;
     $this->_props['ApiUrl'] = EBAY_NOTHING;
     $this->_props['AppMode'] = EBAY_NOTHING;
     $this->_props['PageSize'] = 200;
@@ -876,7 +908,7 @@ class EbatNs_Session {
    */
   function InitFromConfig($configFile)
   {
-    $cfg = parse_ini_file($configFile);
+  	$cfg = is_array($configFile) ? $configFile : parse_ini_file($configFile);
     if ($cfg == false) {
       $this->LogMsg("config file not found", 0, E_ERROR);
     }
@@ -907,98 +939,8 @@ class EbatNs_Session {
         $this->setTokenUsePickupFile(true);
       }
     }
-    // only utf-8 encoding is allowed !!!
-    $this->setXmlEncoding(0);
-    if (isset($cfg['error-language'])) {
-      $this->setErrorLanguage($cfg['error-language']);
-    }else {
-      $this->setErrorLanguage(0);
-    }
-    if (isset($cfg['xml-extra-decode'])) {
-      $this->setDoXmlUtf8Decoding($cfg['xml-extra-decode']);
-    }else {
-      $this->setDoXmlUtf8Decoding(0);
-    }
-    if (isset($cfg['xml-extra-encode'])) {
-      $this->setDoXmlUtf8Encoding($cfg['xml-extra-encode']);
-    }else {
-      $this->setDoXmlUtf8Encoding(0);
-    }
-    if (isset($cfg['use-http-compression'])) {
-      $this->setUseHttpCompression($cfg['use-http-compression']);
-    }
-    if (isset($cfg['log-file'])) {
-      $this->setLogFilename($cfg['log-file']);
-    }
-    if (isset($cfg['log-level'])) {
-      $this->setLogLevel($cfg['log-level']);
-    }
-    if (isset($cfg['log-mode'])) {
-      $this->setLogMode($cfg['log-mode']);
-    }
-    if (isset($cfg['debug-showin'])) {
-      $this->setDebugSwitch('showin');
-    }
-    if (isset($cfg['debug-showout'])) {
-      $this->setDebugSwitch('showout');
-    }
-    if (isset($cfg['debug-profiling'])) {
-      $this->setDebugSwitch('profiling');
-    }
-    if (isset($cfg['debug-curl-verbose'])) {
-      $this->setDebugSwitch('curl-verbose');
-    }
-    if (isset($cfg['raw-log-mode'])) {
-      $this->setRawLogMode($cfg['raw-log-mode']);
-    }
-    if (isset($cfg['raw-log-path'])) {
-      $this->setRawLogPath($cfg['raw-log-path']);
-    }
-    if (isset($cfg['raw-log-name'])) {
-      $this->setRawLogName($cfg['raw-log-name']);
-    }
-    if (isset($cfg['raw-log-seq'])) {
-      $this->setRawLogSeq($cfg['raw-log-seq']);
-    }
-    if (isset($cfg['max-transactions-per-page'])) {
-      $this->_props['PageSize'] = $cfg['max-transactions-per-page'];
-      if ($this->_props['PageSize'] <= 0)
-        $this->_props['PageSize'] = 200;
-    }
-    if (isset($cfg['use_standard_logger'])) {
-		$this->setUseStandardLogger($cfg['use_standard_logger']);
-	}
-  }
-  
-  function InitFromArray($cfg)
-  {
-    $this->_keys['test'] = array($cfg['app-key-test'], $cfg['dev-key-test'], $cfg['cert-id-test']);
-    $this->_keys['prod'] = array($cfg['app-key-prod'], $cfg['dev-key-prod'], $cfg['cert-id-prod']);
-    if (isset($cfg['site-id']))
-        $this->setSiteId($cfg['site-id']);
-    if (isset($cfg['user']))
-        $this->setRequestUser($cfg['user']);
-    if (isset($cfg['password']))
-        $this->setRequestPassword($cfg['password']);
-    if (isset($cfg['app-mode']))
-        $this->setAppMode($cfg['app-mode']);
-    if (isset($cfg['api-mode']))
-        $this->setApiMode($cfg['api-mode']);
-    if (isset($cfg['compat-level']))
-        $this->setCompatibilityLevel($cfg['compat-level']);
-    if (isset($cfg['error-level']))
-        $this->setErrorLevel($cfg['error-level']);
-    if (isset($cfg['request-timeout']))
-        $this->setRequestTimeout($cfg['request-timeout']);
-    if (isset($cfg['serialize-folder']))
-        $this->setSerializeFolder($cfg['serialize-folder']);
-    if (isset($cfg['token-mode'])) {
-      $this->setTokenMode($cfg['token-mode']);
-    if (isset($cfg['token-pickup-file'])) {
-        $this->setTokenPickupFile($cfg['token-pickup-file']);
-        $this->setTokenUsePickupFile(true);
-      }
-    }
+    if (isset($cfg['auth-type']))
+        $this->setAuthType($cfg['auth-type']);
     // only utf-8 encoding is allowed !!!
     $this->setXmlEncoding(0);
     if (isset($cfg['error-language'])) {

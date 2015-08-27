@@ -1,16 +1,16 @@
 <?php
-// $Id: EbatNs_NotificationClient.php,v 1.3 2013-04-17 10:38:43 thomasbiniasch Exp $
+// $Id: EbatNs_NotificationClient.php,v 1.1 2013-04-18 11:49:10 michaelcoslar Exp $
 // $Log: EbatNs_NotificationClient.php,v $
-// Revision 1.3  2013-04-17 10:38:43  thomasbiniasch
-// added some methods needed for notification API (callbacks)
+// Revision 1.1  2013-04-18 11:49:10  michaelcoslar
+// initial checkin
 //
 // Revision 1.2  2008-05-02 15:04:05  carsten
 // Initial, PHP5
 //
 //
 require_once 'EbatNs_ResponseParser.php';
-require_once 'EbatNs_DataConverter.php';
 require_once 'EbatNs_ResponseError.php';
+require_once 'EbatNs_DataConverter.php';
 
 class EbatNs_NotificationClient
 {
@@ -28,6 +28,16 @@ class EbatNs_NotificationClient
 		if ($converter)
 			$this->_dataConverter = new $converter();
 		$this->_parser = null;
+	}
+	
+	function hasDataConverter()
+	{
+		return $this->_dataConverter !== null ? true : false;
+	}
+	
+	function getDataConverter()
+	{
+		return $this->_dataConverter;
 	}
 	
 	// should return true if the data should NOT be included to the
@@ -50,7 +60,12 @@ class EbatNs_NotificationClient
 			} 
 		} 
 		return false;
-	} 
+	}
+	
+	function hasCallbacks()
+	{
+		return $this->_hasCallbacks;
+	}
 	
 	// $typeName as defined in Schema
 	// $method (callback, either string or array with object/method)
@@ -77,21 +92,6 @@ class EbatNs_NotificationClient
 		$this->_parser->setMode(EBATNS_PARSEMODE_NOTIFICATION);
 		
 		return $this->_parser->decode( $method . 'Response', $msg, true );
-	}
-	
-	function hasCallbacks()
-	{
-		return $this->_hasCallbacks;
-	}
-	
-	function hasDataConverter()
-	{
-		return $this->_dataConverter !== null ? true : false;
-	}
-	
-	function getDataConverter()
-	{
-		return $this->_dataConverter;
 	}
 }
 

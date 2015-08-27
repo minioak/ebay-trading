@@ -1,6 +1,9 @@
 <?php
-// $Id: EbatNs_FacetType.php,v 1.2 2008-05-02 15:04:05 carsten Exp $
+// $Id: EbatNs_FacetType.php,v 1.2 2013-04-05 11:15:59 thomasbiniasch Exp $
 // $Log: EbatNs_FacetType.php,v $
+// Revision 1.2  2013-04-05 11:15:59  thomasbiniasch
+// bugfixes and template updates, first running version milestone!
+//
 // Revision 1.2  2008-05-02 15:04:05  carsten
 // Initial, PHP5
 //

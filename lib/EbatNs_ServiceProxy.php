@@ -17,8 +17,8 @@
 // Initial, PHP5
 //
 // 
-// auto-generated 30.09.2013 15:20 
-// Ebay-Schema Version 841
+// auto-generated 8/11/15 3:23 AM 
+// Ebay-Schema Version 933
 //
 /**
  * Load files we depend on.
@@ -30,7 +30,7 @@ require_once 'EbatNs_Session.php';
 /**
  * The WSDL version the SDK is built against.
  */
-define('EBAY_WSDL_VERSION', '841');
+define('EBAY_WSDL_VERSION', '933');
 
 /**
  * This class is the basic interface to the eBay-Webserice for the user.
@@ -92,1444 +92,1604 @@ class EbatNs_ServiceProxy extends EbatNs_Client
 	
 	/**
 	 * @return AddDisputeResponseType
-	 * @param AddDisputeRequestType $request 
-	 */
+	 * @param AddDisputeRequestType
+	 **/
 	function AddDispute($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('AddDispute', $request);
 	}
+
 	/**
 	 * @return AddDisputeResponseResponseType
-	 * @param AddDisputeResponseRequestType $request 
-	 */
+	 * @param AddDisputeResponseRequestType
+	 **/
 	function AddDisputeResponse($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('AddDisputeResponse', $request);
 	}
+
 	/**
 	 * @return AddFixedPriceItemResponseType
-	 * @param AddFixedPriceItemRequestType $request 
-	 */
+	 * @param AddFixedPriceItemRequestType
+	 **/
 	function AddFixedPriceItem($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('AddFixedPriceItem', $request);
 	}
+
 	/**
 	 * @return AddItemResponseType
-	 * @param AddItemRequestType $request 
-	 */
+	 * @param AddItemRequestType
+	 **/
 	function AddItem($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('AddItem', $request);
 	}
+
 	/**
 	 * @return AddItemFromSellingManagerTemplateResponseType
-	 * @param AddItemFromSellingManagerTemplateRequestType $request 
-	 */
+	 * @param AddItemFromSellingManagerTemplateRequestType
+	 **/
 	function AddItemFromSellingManagerTemplate($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('AddItemFromSellingManagerTemplate', $request);
 	}
+
 	/**
 	 * @return AddItemsResponseType
-	 * @param AddItemsRequestType $request 
-	 */
+	 * @param AddItemsRequestType
+	 **/
 	function AddItems($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('AddItems', $request);
 	}
+
 	/**
 	 * @return AddMemberMessageAAQToPartnerResponseType
-	 * @param AddMemberMessageAAQToPartnerRequestType $request 
-	 */
+	 * @param AddMemberMessageAAQToPartnerRequestType
+	 **/
 	function AddMemberMessageAAQToPartner($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('AddMemberMessageAAQToPartner', $request);
 	}
+
 	/**
 	 * @return AddMemberMessageRTQResponseType
-	 * @param AddMemberMessageRTQRequestType $request 
-	 */
+	 * @param AddMemberMessageRTQRequestType
+	 **/
 	function AddMemberMessageRTQ($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('AddMemberMessageRTQ', $request);
 	}
+
 	/**
 	 * @return AddMemberMessagesAAQToBidderResponseType
-	 * @param AddMemberMessagesAAQToBidderRequestType $request 
-	 */
+	 * @param AddMemberMessagesAAQToBidderRequestType
+	 **/
 	function AddMemberMessagesAAQToBidder($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('AddMemberMessagesAAQToBidder', $request);
 	}
+
 	/**
 	 * @return AddOrderResponseType
-	 * @param AddOrderRequestType $request 
-	 */
+	 * @param AddOrderRequestType
+	 **/
 	function AddOrder($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('AddOrder', $request);
 	}
+
 	/**
 	 * @return AddSecondChanceItemResponseType
-	 * @param AddSecondChanceItemRequestType $request 
-	 */
+	 * @param AddSecondChanceItemRequestType
+	 **/
 	function AddSecondChanceItem($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('AddSecondChanceItem', $request);
 	}
+
 	/**
 	 * @return AddSellingManagerInventoryFolderResponseType
-	 * @param AddSellingManagerInventoryFolderRequestType $request 
-	 */
+	 * @param AddSellingManagerInventoryFolderRequestType
+	 **/
 	function AddSellingManagerInventoryFolder($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('AddSellingManagerInventoryFolder', $request);
 	}
+
 	/**
 	 * @return AddSellingManagerProductResponseType
-	 * @param AddSellingManagerProductRequestType $request 
-	 */
+	 * @param AddSellingManagerProductRequestType
+	 **/
 	function AddSellingManagerProduct($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('AddSellingManagerProduct', $request);
 	}
+
 	/**
 	 * @return AddSellingManagerTemplateResponseType
-	 * @param AddSellingManagerTemplateRequestType $request 
-	 */
+	 * @param AddSellingManagerTemplateRequestType
+	 **/
 	function AddSellingManagerTemplate($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('AddSellingManagerTemplate', $request);
 	}
+
 	/**
 	 * @return AddToItemDescriptionResponseType
-	 * @param AddToItemDescriptionRequestType $request 
-	 */
+	 * @param AddToItemDescriptionRequestType
+	 **/
 	function AddToItemDescription($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('AddToItemDescription', $request);
 	}
+
 	/**
 	 * @return AddToWatchListResponseType
-	 * @param AddToWatchListRequestType $request 
-	 */
+	 * @param AddToWatchListRequestType
+	 **/
 	function AddToWatchList($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('AddToWatchList', $request);
 	}
+
 	/**
 	 * @return AddTransactionConfirmationItemResponseType
-	 * @param AddTransactionConfirmationItemRequestType $request 
-	 */
+	 * @param AddTransactionConfirmationItemRequestType
+	 **/
 	function AddTransactionConfirmationItem($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('AddTransactionConfirmationItem', $request);
 	}
+
 	/**
 	 * @return CompleteSaleResponseType
-	 * @param CompleteSaleRequestType $request 
-	 */
+	 * @param CompleteSaleRequestType
+	 **/
 	function CompleteSale($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('CompleteSale', $request);
 	}
+
 	/**
 	 * @return ConfirmIdentityResponseType
-	 * @param ConfirmIdentityRequestType $request 
-	 */
+	 * @param ConfirmIdentityRequestType
+	 **/
 	function ConfirmIdentity($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('ConfirmIdentity', $request);
 	}
+
 	/**
 	 * @return DeleteMyMessagesResponseType
-	 * @param DeleteMyMessagesRequestType $request 
-	 */
+	 * @param DeleteMyMessagesRequestType
+	 **/
 	function DeleteMyMessages($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('DeleteMyMessages', $request);
 	}
+
 	/**
 	 * @return DeleteSellingManagerInventoryFolderResponseType
-	 * @param DeleteSellingManagerInventoryFolderRequestType $request 
-	 */
+	 * @param DeleteSellingManagerInventoryFolderRequestType
+	 **/
 	function DeleteSellingManagerInventoryFolder($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('DeleteSellingManagerInventoryFolder', $request);
 	}
+
 	/**
 	 * @return DeleteSellingManagerItemAutomationRuleResponseType
-	 * @param DeleteSellingManagerItemAutomationRuleRequestType $request 
-	 */
+	 * @param DeleteSellingManagerItemAutomationRuleRequestType
+	 **/
 	function DeleteSellingManagerItemAutomationRule($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('DeleteSellingManagerItemAutomationRule', $request);
 	}
+
 	/**
 	 * @return DeleteSellingManagerProductResponseType
-	 * @param DeleteSellingManagerProductRequestType $request 
-	 */
+	 * @param DeleteSellingManagerProductRequestType
+	 **/
 	function DeleteSellingManagerProduct($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('DeleteSellingManagerProduct', $request);
 	}
+
 	/**
 	 * @return DeleteSellingManagerTemplateResponseType
-	 * @param DeleteSellingManagerTemplateRequestType $request 
-	 */
+	 * @param DeleteSellingManagerTemplateRequestType
+	 **/
 	function DeleteSellingManagerTemplate($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('DeleteSellingManagerTemplate', $request);
 	}
+
 	/**
 	 * @return DeleteSellingManagerTemplateAutomationRuleResponseType
-	 * @param DeleteSellingManagerTemplateAutomationRuleRequestType $request 
-	 */
+	 * @param DeleteSellingManagerTemplateAutomationRuleRequestType
+	 **/
 	function DeleteSellingManagerTemplateAutomationRule($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('DeleteSellingManagerTemplateAutomationRule', $request);
 	}
+
 	/**
 	 * @return DisableUnpaidItemAssistanceResponseType
-	 * @param DisableUnpaidItemAssistanceRequestType $request 
-	 */
+	 * @param DisableUnpaidItemAssistanceRequestType
+	 **/
 	function DisableUnpaidItemAssistance($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('DisableUnpaidItemAssistance', $request);
 	}
+
 	/**
 	 * @return EndFixedPriceItemResponseType
-	 * @param EndFixedPriceItemRequestType $request 
-	 */
+	 * @param EndFixedPriceItemRequestType
+	 **/
 	function EndFixedPriceItem($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('EndFixedPriceItem', $request);
 	}
+
 	/**
 	 * @return EndItemResponseType
-	 * @param EndItemRequestType $request 
-	 */
+	 * @param EndItemRequestType
+	 **/
 	function EndItem($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('EndItem', $request);
 	}
+
 	/**
 	 * @return EndItemsResponseType
-	 * @param EndItemsRequestType $request 
-	 */
+	 * @param EndItemsRequestType
+	 **/
 	function EndItems($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('EndItems', $request);
 	}
+
 	/**
 	 * @return ExtendSiteHostedPicturesResponseType
-	 * @param ExtendSiteHostedPicturesRequestType $request 
-	 */
+	 * @param ExtendSiteHostedPicturesRequestType
+	 **/
 	function ExtendSiteHostedPictures($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('ExtendSiteHostedPictures', $request);
 	}
+
 	/**
 	 * @return FetchTokenResponseType
-	 * @param FetchTokenRequestType $request 
-	 */
+	 * @param FetchTokenRequestType
+	 **/
 	function FetchToken($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('FetchToken', $request);
 	}
+
 	/**
 	 * @return GetAccountResponseType
-	 * @param GetAccountRequestType $request 
-	 */
+	 * @param GetAccountRequestType
+	 **/
 	function GetAccount($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetAccount', $request);
 	}
+
 	/**
 	 * @return GetAdFormatLeadsResponseType
-	 * @param GetAdFormatLeadsRequestType $request 
-	 */
+	 * @param GetAdFormatLeadsRequestType
+	 **/
 	function GetAdFormatLeads($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetAdFormatLeads', $request);
 	}
+
 	/**
 	 * @return GetAllBiddersResponseType
-	 * @param GetAllBiddersRequestType $request 
-	 */
+	 * @param GetAllBiddersRequestType
+	 **/
 	function GetAllBidders($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetAllBidders', $request);
 	}
+
 	/**
 	 * @return GetApiAccessRulesResponseType
-	 * @param GetApiAccessRulesRequestType $request 
-	 */
+	 * @param GetApiAccessRulesRequestType
+	 **/
 	function GetApiAccessRules($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetApiAccessRules', $request);
 	}
+
 	/**
 	 * @return GetAttributesCSResponseType
-	 * @param GetAttributesCSRequestType $request 
-	 */
+	 * @param GetAttributesCSRequestType
+	 **/
 	function GetAttributesCS($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetAttributesCS', $request);
 	}
+
 	/**
 	 * @return GetAttributesXSLResponseType
-	 * @param GetAttributesXSLRequestType $request 
-	 */
+	 * @param GetAttributesXSLRequestType
+	 **/
 	function GetAttributesXSL($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetAttributesXSL', $request);
 	}
+
 	/**
 	 * @return GetBestOffersResponseType
-	 * @param GetBestOffersRequestType $request 
-	 */
+	 * @param GetBestOffersRequestType
+	 **/
 	function GetBestOffers($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetBestOffers', $request);
 	}
+
 	/**
 	 * @return GetBidderListResponseType
-	 * @param GetBidderListRequestType $request 
-	 */
+	 * @param GetBidderListRequestType
+	 **/
 	function GetBidderList($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetBidderList', $request);
 	}
+
 	/**
 	 * @return GetCategoriesResponseType
-	 * @param GetCategoriesRequestType $request 
-	 */
+	 * @param GetCategoriesRequestType
+	 **/
 	function GetCategories($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetCategories', $request);
 	}
+
 	/**
 	 * @return GetCategory2CSResponseType
-	 * @param GetCategory2CSRequestType $request 
-	 */
+	 * @param GetCategory2CSRequestType
+	 **/
 	function GetCategory2CS($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetCategory2CS', $request);
 	}
+
 	/**
 	 * @return GetCategoryFeaturesResponseType
-	 * @param GetCategoryFeaturesRequestType $request 
-	 */
+	 * @param GetCategoryFeaturesRequestType
+	 **/
 	function GetCategoryFeatures($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetCategoryFeatures', $request);
 	}
+
 	/**
 	 * @return GetCategoryMappingsResponseType
-	 * @param GetCategoryMappingsRequestType $request 
-	 */
+	 * @param GetCategoryMappingsRequestType
+	 **/
 	function GetCategoryMappings($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetCategoryMappings', $request);
 	}
+
 	/**
 	 * @return GetCategorySpecificsResponseType
-	 * @param GetCategorySpecificsRequestType $request 
-	 */
+	 * @param GetCategorySpecificsRequestType
+	 **/
 	function GetCategorySpecifics($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetCategorySpecifics', $request);
 	}
+
 	/**
 	 * @return GetChallengeTokenResponseType
-	 * @param GetChallengeTokenRequestType $request 
-	 */
+	 * @param GetChallengeTokenRequestType
+	 **/
 	function GetChallengeToken($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetChallengeToken', $request);
 	}
+
 	/**
 	 * @return GetCharitiesResponseType
-	 * @param GetCharitiesRequestType $request 
-	 */
+	 * @param GetCharitiesRequestType
+	 **/
 	function GetCharities($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetCharities', $request);
 	}
+
 	/**
 	 * @return GetClientAlertsAuthTokenResponseType
-	 * @param GetClientAlertsAuthTokenRequestType $request 
-	 */
+	 * @param GetClientAlertsAuthTokenRequestType
+	 **/
 	function GetClientAlertsAuthToken($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetClientAlertsAuthToken', $request);
 	}
+
 	/**
 	 * @return GetContextualKeywordsResponseType
-	 * @param GetContextualKeywordsRequestType $request 
-	 */
+	 * @param GetContextualKeywordsRequestType
+	 **/
 	function GetContextualKeywords($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetContextualKeywords', $request);
 	}
+
 	/**
 	 * @return GetCrossPromotionsResponseType
-	 * @param GetCrossPromotionsRequestType $request 
-	 */
+	 * @param GetCrossPromotionsRequestType
+	 **/
 	function GetCrossPromotions($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetCrossPromotions', $request);
 	}
+
 	/**
 	 * @return GetDescriptionTemplatesResponseType
-	 * @param GetDescriptionTemplatesRequestType $request 
-	 */
+	 * @param GetDescriptionTemplatesRequestType
+	 **/
 	function GetDescriptionTemplates($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetDescriptionTemplates', $request);
 	}
+
 	/**
 	 * @return GetDisputeResponseType
-	 * @param GetDisputeRequestType $request 
-	 */
+	 * @param GetDisputeRequestType
+	 **/
 	function GetDispute($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetDispute', $request);
 	}
+
 	/**
 	 * @return GetFeedbackResponseType
-	 * @param GetFeedbackRequestType $request 
-	 */
+	 * @param GetFeedbackRequestType
+	 **/
 	function GetFeedback($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetFeedback', $request);
 	}
+
 	/**
 	 * @return GetHighBiddersResponseType
-	 * @param GetHighBiddersRequestType $request 
-	 */
+	 * @param GetHighBiddersRequestType
+	 **/
 	function GetHighBidders($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetHighBidders', $request);
 	}
+
 	/**
 	 * @return GetItemResponseType
-	 * @param GetItemRequestType $request 
-	 */
+	 * @param GetItemRequestType
+	 **/
 	function GetItem($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetItem', $request);
 	}
+
 	/**
 	 * @return GetItemRecommendationsResponseType
-	 * @param GetItemRecommendationsRequestType $request 
-	 */
+	 * @param GetItemRecommendationsRequestType
+	 **/
 	function GetItemRecommendations($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetItemRecommendations', $request);
 	}
+
 	/**
 	 * @return GetItemShippingResponseType
-	 * @param GetItemShippingRequestType $request 
-	 */
+	 * @param GetItemShippingRequestType
+	 **/
 	function GetItemShipping($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetItemShipping', $request);
 	}
+
 	/**
 	 * @return GetItemTransactionsResponseType
-	 * @param GetItemTransactionsRequestType $request 
-	 */
+	 * @param GetItemTransactionsRequestType
+	 **/
 	function GetItemTransactions($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetItemTransactions', $request);
 	}
+
 	/**
 	 * @return GetItemsAwaitingFeedbackResponseType
-	 * @param GetItemsAwaitingFeedbackRequestType $request 
-	 */
+	 * @param GetItemsAwaitingFeedbackRequestType
+	 **/
 	function GetItemsAwaitingFeedback($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetItemsAwaitingFeedback', $request);
 	}
+
 	/**
 	 * @return GetMemberMessagesResponseType
-	 * @param GetMemberMessagesRequestType $request 
-	 */
+	 * @param GetMemberMessagesRequestType
+	 **/
 	function GetMemberMessages($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetMemberMessages', $request);
 	}
+
 	/**
 	 * @return GetMessagePreferencesResponseType
-	 * @param GetMessagePreferencesRequestType $request 
-	 */
+	 * @param GetMessagePreferencesRequestType
+	 **/
 	function GetMessagePreferences($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetMessagePreferences', $request);
 	}
+
 	/**
 	 * @return GetMyMessagesResponseType
-	 * @param GetMyMessagesRequestType $request 
-	 */
+	 * @param GetMyMessagesRequestType
+	 **/
 	function GetMyMessages($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetMyMessages', $request);
 	}
+
 	/**
 	 * @return GetMyeBayBuyingResponseType
-	 * @param GetMyeBayBuyingRequestType $request 
-	 */
+	 * @param GetMyeBayBuyingRequestType
+	 **/
 	function GetMyeBayBuying($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetMyeBayBuying', $request);
 	}
+
 	/**
 	 * @return GetMyeBayRemindersResponseType
-	 * @param GetMyeBayRemindersRequestType $request 
-	 */
+	 * @param GetMyeBayRemindersRequestType
+	 **/
 	function GetMyeBayReminders($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetMyeBayReminders', $request);
 	}
+
 	/**
 	 * @return GetMyeBaySellingResponseType
-	 * @param GetMyeBaySellingRequestType $request 
-	 */
+	 * @param GetMyeBaySellingRequestType
+	 **/
 	function GetMyeBaySelling($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetMyeBaySelling', $request);
 	}
+
 	/**
 	 * @return GetNotificationPreferencesResponseType
-	 * @param GetNotificationPreferencesRequestType $request 
-	 */
+	 * @param GetNotificationPreferencesRequestType
+	 **/
 	function GetNotificationPreferences($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetNotificationPreferences', $request);
 	}
+
 	/**
 	 * @return GetNotificationsUsageResponseType
-	 * @param GetNotificationsUsageRequestType $request 
-	 */
+	 * @param GetNotificationsUsageRequestType
+	 **/
 	function GetNotificationsUsage($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetNotificationsUsage', $request);
 	}
+
 	/**
 	 * @return GetOrderTransactionsResponseType
-	 * @param GetOrderTransactionsRequestType $request 
-	 */
+	 * @param GetOrderTransactionsRequestType
+	 **/
 	function GetOrderTransactions($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetOrderTransactions', $request);
 	}
+
 	/**
 	 * @return GetOrdersResponseType
-	 * @param GetOrdersRequestType $request 
-	 */
+	 * @param GetOrdersRequestType
+	 **/
 	function GetOrders($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetOrders', $request);
 	}
+
 	/**
 	 * @return GetPictureManagerDetailsResponseType
-	 * @param GetPictureManagerDetailsRequestType $request 
-	 */
+	 * @param GetPictureManagerDetailsRequestType
+	 **/
 	function GetPictureManagerDetails($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetPictureManagerDetails', $request);
 	}
+
 	/**
 	 * @return GetPictureManagerOptionsResponseType
-	 * @param GetPictureManagerOptionsRequestType $request 
-	 */
+	 * @param GetPictureManagerOptionsRequestType
+	 **/
 	function GetPictureManagerOptions($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetPictureManagerOptions', $request);
 	}
+
 	/**
 	 * @return GetProductFamilyMembersResponseType
-	 * @param GetProductFamilyMembersRequestType $request 
-	 */
+	 * @param GetProductFamilyMembersRequestType
+	 **/
 	function GetProductFamilyMembers($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetProductFamilyMembers', $request);
 	}
+
 	/**
 	 * @return GetProductFinderResponseType
-	 * @param GetProductFinderRequestType $request 
-	 */
+	 * @param GetProductFinderRequestType
+	 **/
 	function GetProductFinder($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetProductFinder', $request);
 	}
+
 	/**
 	 * @return GetProductFinderXSLResponseType
-	 * @param GetProductFinderXSLRequestType $request 
-	 */
+	 * @param GetProductFinderXSLRequestType
+	 **/
 	function GetProductFinderXSL($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetProductFinderXSL', $request);
 	}
+
 	/**
 	 * @return GetProductSearchPageResponseType
-	 * @param GetProductSearchPageRequestType $request 
-	 */
+	 * @param GetProductSearchPageRequestType
+	 **/
 	function GetProductSearchPage($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetProductSearchPage', $request);
 	}
+
 	/**
 	 * @return GetProductSearchResultsResponseType
-	 * @param GetProductSearchResultsRequestType $request 
-	 */
+	 * @param GetProductSearchResultsRequestType
+	 **/
 	function GetProductSearchResults($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetProductSearchResults', $request);
 	}
+
 	/**
 	 * @return GetProductSellingPagesResponseType
-	 * @param GetProductSellingPagesRequestType $request 
-	 */
+	 * @param GetProductSellingPagesRequestType
+	 **/
 	function GetProductSellingPages($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetProductSellingPages', $request);
 	}
+
 	/**
 	 * @return GetPromotionRulesResponseType
-	 * @param GetPromotionRulesRequestType $request 
-	 */
+	 * @param GetPromotionRulesRequestType
+	 **/
 	function GetPromotionRules($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetPromotionRules', $request);
 	}
+
 	/**
 	 * @return GetPromotionalSaleDetailsResponseType
-	 * @param GetPromotionalSaleDetailsRequestType $request 
-	 */
+	 * @param GetPromotionalSaleDetailsRequestType
+	 **/
 	function GetPromotionalSaleDetails($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetPromotionalSaleDetails', $request);
 	}
+
 	/**
 	 * @return GetSellerDashboardResponseType
-	 * @param GetSellerDashboardRequestType $request 
-	 */
+	 * @param GetSellerDashboardRequestType
+	 **/
 	function GetSellerDashboard($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetSellerDashboard', $request);
 	}
+
 	/**
 	 * @return GetSellerEventsResponseType
-	 * @param GetSellerEventsRequestType $request 
-	 */
+	 * @param GetSellerEventsRequestType
+	 **/
 	function GetSellerEvents($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetSellerEvents', $request);
 	}
+
 	/**
 	 * @return GetSellerListResponseType
-	 * @param GetSellerListRequestType $request 
-	 */
+	 * @param GetSellerListRequestType
+	 **/
 	function GetSellerList($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetSellerList', $request);
 	}
+
 	/**
 	 * @return GetSellerPaymentsResponseType
-	 * @param GetSellerPaymentsRequestType $request 
-	 */
+	 * @param GetSellerPaymentsRequestType
+	 **/
 	function GetSellerPayments($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetSellerPayments', $request);
 	}
+
 	/**
 	 * @return GetSellerTransactionsResponseType
-	 * @param GetSellerTransactionsRequestType $request 
-	 */
+	 * @param GetSellerTransactionsRequestType
+	 **/
 	function GetSellerTransactions($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetSellerTransactions', $request);
 	}
+
 	/**
 	 * @return GetSellingManagerAlertsResponseType
-	 * @param GetSellingManagerAlertsRequestType $request 
-	 */
+	 * @param GetSellingManagerAlertsRequestType
+	 **/
 	function GetSellingManagerAlerts($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetSellingManagerAlerts', $request);
 	}
+
 	/**
 	 * @return GetSellingManagerEmailLogResponseType
-	 * @param GetSellingManagerEmailLogRequestType $request 
-	 */
+	 * @param GetSellingManagerEmailLogRequestType
+	 **/
 	function GetSellingManagerEmailLog($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetSellingManagerEmailLog', $request);
 	}
+
 	/**
 	 * @return GetSellingManagerInventoryResponseType
-	 * @param GetSellingManagerInventoryRequestType $request 
-	 */
+	 * @param GetSellingManagerInventoryRequestType
+	 **/
 	function GetSellingManagerInventory($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetSellingManagerInventory', $request);
 	}
+
 	/**
 	 * @return GetSellingManagerInventoryFolderResponseType
-	 * @param GetSellingManagerInventoryFolderRequestType $request 
-	 */
+	 * @param GetSellingManagerInventoryFolderRequestType
+	 **/
 	function GetSellingManagerInventoryFolder($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetSellingManagerInventoryFolder', $request);
 	}
+
 	/**
 	 * @return GetSellingManagerItemAutomationRuleResponseType
-	 * @param GetSellingManagerItemAutomationRuleRequestType $request 
-	 */
+	 * @param GetSellingManagerItemAutomationRuleRequestType
+	 **/
 	function GetSellingManagerItemAutomationRule($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetSellingManagerItemAutomationRule', $request);
 	}
+
 	/**
 	 * @return GetSellingManagerSaleRecordResponseType
-	 * @param GetSellingManagerSaleRecordRequestType $request 
-	 */
+	 * @param GetSellingManagerSaleRecordRequestType
+	 **/
 	function GetSellingManagerSaleRecord($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetSellingManagerSaleRecord', $request);
 	}
+
 	/**
 	 * @return GetSellingManagerSoldListingsResponseType
-	 * @param GetSellingManagerSoldListingsRequestType $request 
-	 */
+	 * @param GetSellingManagerSoldListingsRequestType
+	 **/
 	function GetSellingManagerSoldListings($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetSellingManagerSoldListings', $request);
 	}
+
 	/**
 	 * @return GetSellingManagerTemplateAutomationRuleResponseType
-	 * @param GetSellingManagerTemplateAutomationRuleRequestType $request 
-	 */
+	 * @param GetSellingManagerTemplateAutomationRuleRequestType
+	 **/
 	function GetSellingManagerTemplateAutomationRule($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetSellingManagerTemplateAutomationRule', $request);
 	}
+
 	/**
 	 * @return GetSellingManagerTemplatesResponseType
-	 * @param GetSellingManagerTemplatesRequestType $request 
-	 */
+	 * @param GetSellingManagerTemplatesRequestType
+	 **/
 	function GetSellingManagerTemplates($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetSellingManagerTemplates', $request);
 	}
+
 	/**
 	 * @return GetSessionIDResponseType
-	 * @param GetSessionIDRequestType $request 
-	 */
+	 * @param GetSessionIDRequestType
+	 **/
 	function GetSessionID($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetSessionID', $request);
 	}
+
 	/**
 	 * @return GetShippingDiscountProfilesResponseType
-	 * @param GetShippingDiscountProfilesRequestType $request 
-	 */
+	 * @param GetShippingDiscountProfilesRequestType
+	 **/
 	function GetShippingDiscountProfiles($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetShippingDiscountProfiles', $request);
 	}
+
 	/**
 	 * @return GetStoreResponseType
-	 * @param GetStoreRequestType $request 
-	 */
+	 * @param GetStoreRequestType
+	 **/
 	function GetStore($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetStore', $request);
 	}
+
 	/**
 	 * @return GetStoreCategoryUpdateStatusResponseType
-	 * @param GetStoreCategoryUpdateStatusRequestType $request 
-	 */
+	 * @param GetStoreCategoryUpdateStatusRequestType
+	 **/
 	function GetStoreCategoryUpdateStatus($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetStoreCategoryUpdateStatus', $request);
 	}
+
 	/**
 	 * @return GetStoreCustomPageResponseType
-	 * @param GetStoreCustomPageRequestType $request 
-	 */
+	 * @param GetStoreCustomPageRequestType
+	 **/
 	function GetStoreCustomPage($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetStoreCustomPage', $request);
 	}
+
 	/**
 	 * @return GetStoreOptionsResponseType
-	 * @param GetStoreOptionsRequestType $request 
-	 */
+	 * @param GetStoreOptionsRequestType
+	 **/
 	function GetStoreOptions($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetStoreOptions', $request);
 	}
+
 	/**
 	 * @return GetStorePreferencesResponseType
-	 * @param GetStorePreferencesRequestType $request 
-	 */
+	 * @param GetStorePreferencesRequestType
+	 **/
 	function GetStorePreferences($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetStorePreferences', $request);
 	}
+
 	/**
 	 * @return GetSuggestedCategoriesResponseType
-	 * @param GetSuggestedCategoriesRequestType $request 
-	 */
+	 * @param GetSuggestedCategoriesRequestType
+	 **/
 	function GetSuggestedCategories($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetSuggestedCategories', $request);
 	}
+
 	/**
 	 * @return GetTaxTableResponseType
-	 * @param GetTaxTableRequestType $request 
-	 */
+	 * @param GetTaxTableRequestType
+	 **/
 	function GetTaxTable($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetTaxTable', $request);
 	}
+
 	/**
 	 * @return GetTokenStatusResponseType
-	 * @param GetTokenStatusRequestType $request 
-	 */
+	 * @param GetTokenStatusRequestType
+	 **/
 	function GetTokenStatus($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetTokenStatus', $request);
 	}
+
 	/**
 	 * @return GetUserResponseType
-	 * @param GetUserRequestType $request 
-	 */
+	 * @param GetUserRequestType
+	 **/
 	function GetUser($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetUser', $request);
 	}
+
 	/**
 	 * @return GetUserContactDetailsResponseType
-	 * @param GetUserContactDetailsRequestType $request 
-	 */
+	 * @param GetUserContactDetailsRequestType
+	 **/
 	function GetUserContactDetails($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetUserContactDetails', $request);
 	}
+
 	/**
 	 * @return GetUserDisputesResponseType
-	 * @param GetUserDisputesRequestType $request 
-	 */
+	 * @param GetUserDisputesRequestType
+	 **/
 	function GetUserDisputes($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetUserDisputes', $request);
 	}
+
 	/**
 	 * @return GetUserPreferencesResponseType
-	 * @param GetUserPreferencesRequestType $request 
-	 */
+	 * @param GetUserPreferencesRequestType
+	 **/
 	function GetUserPreferences($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetUserPreferences', $request);
 	}
+
 	/**
 	 * @return GetVeROReasonCodeDetailsResponseType
-	 * @param GetVeROReasonCodeDetailsRequestType $request 
-	 */
+	 * @param GetVeROReasonCodeDetailsRequestType
+	 **/
 	function GetVeROReasonCodeDetails($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetVeROReasonCodeDetails', $request);
 	}
+
 	/**
 	 * @return GetVeROReportStatusResponseType
-	 * @param GetVeROReportStatusRequestType $request 
-	 */
+	 * @param GetVeROReportStatusRequestType
+	 **/
 	function GetVeROReportStatus($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetVeROReportStatus', $request);
 	}
+
 	/**
 	 * @return GetWantItNowPostResponseType
-	 * @param GetWantItNowPostRequestType $request 
-	 */
+	 * @param GetWantItNowPostRequestType
+	 **/
 	function GetWantItNowPost($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetWantItNowPost', $request);
 	}
+
 	/**
 	 * @return GetWantItNowSearchResultsResponseType
-	 * @param GetWantItNowSearchResultsRequestType $request 
-	 */
+	 * @param GetWantItNowSearchResultsRequestType
+	 **/
 	function GetWantItNowSearchResults($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GetWantItNowSearchResults', $request);
 	}
+
 	/**
 	 * @return GeteBayDetailsResponseType
-	 * @param GeteBayDetailsRequestType $request 
-	 */
+	 * @param GeteBayDetailsRequestType
+	 **/
 	function GeteBayDetails($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GeteBayDetails', $request);
 	}
+
 	/**
 	 * @return GeteBayOfficialTimeResponseType
-	 * @param GeteBayOfficialTimeRequestType $request 
-	 */
+	 * @param GeteBayOfficialTimeRequestType
+	 **/
 	function GeteBayOfficialTime($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('GeteBayOfficialTime', $request);
 	}
+
 	/**
 	 * @return IssueRefundResponseType
-	 * @param IssueRefundRequestType $request 
-	 */
+	 * @param IssueRefundRequestType
+	 **/
 	function IssueRefund($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('IssueRefund', $request);
 	}
+
 	/**
 	 * @return LeaveFeedbackResponseType
-	 * @param LeaveFeedbackRequestType $request 
-	 */
+	 * @param LeaveFeedbackRequestType
+	 **/
 	function LeaveFeedback($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('LeaveFeedback', $request);
 	}
+
 	/**
 	 * @return MoveSellingManagerInventoryFolderResponseType
-	 * @param MoveSellingManagerInventoryFolderRequestType $request 
-	 */
+	 * @param MoveSellingManagerInventoryFolderRequestType
+	 **/
 	function MoveSellingManagerInventoryFolder($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('MoveSellingManagerInventoryFolder', $request);
 	}
+
 	/**
 	 * @return PlaceOfferResponseType
-	 * @param PlaceOfferRequestType $request 
-	 */
+	 * @param PlaceOfferRequestType
+	 **/
 	function PlaceOffer($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('PlaceOffer', $request);
 	}
+
 	/**
 	 * @return RelistFixedPriceItemResponseType
-	 * @param RelistFixedPriceItemRequestType $request 
-	 */
+	 * @param RelistFixedPriceItemRequestType
+	 **/
 	function RelistFixedPriceItem($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('RelistFixedPriceItem', $request);
 	}
+
 	/**
 	 * @return RelistItemResponseType
-	 * @param RelistItemRequestType $request 
-	 */
+	 * @param RelistItemRequestType
+	 **/
 	function RelistItem($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('RelistItem', $request);
 	}
+
 	/**
 	 * @return RemoveFromWatchListResponseType
-	 * @param RemoveFromWatchListRequestType $request 
-	 */
+	 * @param RemoveFromWatchListRequestType
+	 **/
 	function RemoveFromWatchList($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('RemoveFromWatchList', $request);
 	}
+
 	/**
 	 * @return RespondToBestOfferResponseType
-	 * @param RespondToBestOfferRequestType $request 
-	 */
+	 * @param RespondToBestOfferRequestType
+	 **/
 	function RespondToBestOffer($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('RespondToBestOffer', $request);
 	}
+
 	/**
 	 * @return RespondToFeedbackResponseType
-	 * @param RespondToFeedbackRequestType $request 
-	 */
+	 * @param RespondToFeedbackRequestType
+	 **/
 	function RespondToFeedback($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('RespondToFeedback', $request);
 	}
+
 	/**
 	 * @return RespondToWantItNowPostResponseType
-	 * @param RespondToWantItNowPostRequestType $request 
-	 */
+	 * @param RespondToWantItNowPostRequestType
+	 **/
 	function RespondToWantItNowPost($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('RespondToWantItNowPost', $request);
 	}
+
 	/**
 	 * @return ReviseCheckoutStatusResponseType
-	 * @param ReviseCheckoutStatusRequestType $request 
-	 */
+	 * @param ReviseCheckoutStatusRequestType
+	 **/
 	function ReviseCheckoutStatus($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('ReviseCheckoutStatus', $request);
 	}
+
 	/**
 	 * @return ReviseFixedPriceItemResponseType
-	 * @param ReviseFixedPriceItemRequestType $request 
-	 */
+	 * @param ReviseFixedPriceItemRequestType
+	 **/
 	function ReviseFixedPriceItem($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('ReviseFixedPriceItem', $request);
 	}
+
 	/**
 	 * @return ReviseInventoryStatusResponseType
-	 * @param ReviseInventoryStatusRequestType $request 
-	 */
+	 * @param ReviseInventoryStatusRequestType
+	 **/
 	function ReviseInventoryStatus($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('ReviseInventoryStatus', $request);
 	}
+
 	/**
 	 * @return ReviseItemResponseType
-	 * @param ReviseItemRequestType $request 
-	 */
+	 * @param ReviseItemRequestType
+	 **/
 	function ReviseItem($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('ReviseItem', $request);
 	}
+
 	/**
 	 * @return ReviseMyMessagesResponseType
-	 * @param ReviseMyMessagesRequestType $request 
-	 */
+	 * @param ReviseMyMessagesRequestType
+	 **/
 	function ReviseMyMessages($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('ReviseMyMessages', $request);
 	}
+
 	/**
 	 * @return ReviseMyMessagesFoldersResponseType
-	 * @param ReviseMyMessagesFoldersRequestType $request 
-	 */
+	 * @param ReviseMyMessagesFoldersRequestType
+	 **/
 	function ReviseMyMessagesFolders($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('ReviseMyMessagesFolders', $request);
 	}
+
 	/**
 	 * @return ReviseSellingManagerInventoryFolderResponseType
-	 * @param ReviseSellingManagerInventoryFolderRequestType $request 
-	 */
+	 * @param ReviseSellingManagerInventoryFolderRequestType
+	 **/
 	function ReviseSellingManagerInventoryFolder($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('ReviseSellingManagerInventoryFolder', $request);
 	}
+
 	/**
 	 * @return ReviseSellingManagerProductResponseType
-	 * @param ReviseSellingManagerProductRequestType $request 
-	 */
+	 * @param ReviseSellingManagerProductRequestType
+	 **/
 	function ReviseSellingManagerProduct($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('ReviseSellingManagerProduct', $request);
 	}
+
 	/**
 	 * @return ReviseSellingManagerSaleRecordResponseType
-	 * @param ReviseSellingManagerSaleRecordRequestType $request 
-	 */
+	 * @param ReviseSellingManagerSaleRecordRequestType
+	 **/
 	function ReviseSellingManagerSaleRecord($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('ReviseSellingManagerSaleRecord', $request);
 	}
+
 	/**
 	 * @return ReviseSellingManagerTemplateResponseType
-	 * @param ReviseSellingManagerTemplateRequestType $request 
-	 */
+	 * @param ReviseSellingManagerTemplateRequestType
+	 **/
 	function ReviseSellingManagerTemplate($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('ReviseSellingManagerTemplate', $request);
 	}
+
 	/**
 	 * @return RevokeTokenResponseType
-	 * @param RevokeTokenRequestType $request 
-	 */
+	 * @param RevokeTokenRequestType
+	 **/
 	function RevokeToken($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('RevokeToken', $request);
 	}
+
 	/**
 	 * @return SaveItemToSellingManagerTemplateResponseType
-	 * @param SaveItemToSellingManagerTemplateRequestType $request 
-	 */
+	 * @param SaveItemToSellingManagerTemplateRequestType
+	 **/
 	function SaveItemToSellingManagerTemplate($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('SaveItemToSellingManagerTemplate', $request);
 	}
+
 	/**
 	 * @return SellerReverseDisputeResponseType
-	 * @param SellerReverseDisputeRequestType $request 
-	 */
+	 * @param SellerReverseDisputeRequestType
+	 **/
 	function SellerReverseDispute($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('SellerReverseDispute', $request);
 	}
+
 	/**
 	 * @return SendInvoiceResponseType
-	 * @param SendInvoiceRequestType $request 
-	 */
+	 * @param SendInvoiceRequestType
+	 **/
 	function SendInvoice($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('SendInvoice', $request);
 	}
+
 	/**
 	 * @return SetMessagePreferencesResponseType
-	 * @param SetMessagePreferencesRequestType $request 
-	 */
+	 * @param SetMessagePreferencesRequestType
+	 **/
 	function SetMessagePreferences($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('SetMessagePreferences', $request);
 	}
+
 	/**
 	 * @return SetNotificationPreferencesResponseType
-	 * @param SetNotificationPreferencesRequestType $request 
-	 */
+	 * @param SetNotificationPreferencesRequestType
+	 **/
 	function SetNotificationPreferences($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('SetNotificationPreferences', $request);
 	}
+
 	/**
 	 * @return SetPictureManagerDetailsResponseType
-	 * @param SetPictureManagerDetailsRequestType $request 
-	 */
+	 * @param SetPictureManagerDetailsRequestType
+	 **/
 	function SetPictureManagerDetails($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('SetPictureManagerDetails', $request);
 	}
+
 	/**
 	 * @return SetPromotionalSaleResponseType
-	 * @param SetPromotionalSaleRequestType $request 
-	 */
+	 * @param SetPromotionalSaleRequestType
+	 **/
 	function SetPromotionalSale($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('SetPromotionalSale', $request);
 	}
+
 	/**
 	 * @return SetPromotionalSaleListingsResponseType
-	 * @param SetPromotionalSaleListingsRequestType $request 
-	 */
+	 * @param SetPromotionalSaleListingsRequestType
+	 **/
 	function SetPromotionalSaleListings($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('SetPromotionalSaleListings', $request);
 	}
+
 	/**
 	 * @return SetSellingManagerFeedbackOptionsResponseType
-	 * @param SetSellingManagerFeedbackOptionsRequestType $request 
-	 */
+	 * @param SetSellingManagerFeedbackOptionsRequestType
+	 **/
 	function SetSellingManagerFeedbackOptions($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('SetSellingManagerFeedbackOptions', $request);
 	}
+
 	/**
 	 * @return SetSellingManagerItemAutomationRuleResponseType
-	 * @param SetSellingManagerItemAutomationRuleRequestType $request 
-	 */
+	 * @param SetSellingManagerItemAutomationRuleRequestType
+	 **/
 	function SetSellingManagerItemAutomationRule($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('SetSellingManagerItemAutomationRule', $request);
 	}
+
 	/**
 	 * @return SetSellingManagerTemplateAutomationRuleResponseType
-	 * @param SetSellingManagerTemplateAutomationRuleRequestType $request 
-	 */
+	 * @param SetSellingManagerTemplateAutomationRuleRequestType
+	 **/
 	function SetSellingManagerTemplateAutomationRule($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('SetSellingManagerTemplateAutomationRule', $request);
 	}
+
 	/**
 	 * @return SetShippingDiscountProfilesResponseType
-	 * @param SetShippingDiscountProfilesRequestType $request 
-	 */
+	 * @param SetShippingDiscountProfilesRequestType
+	 **/
 	function SetShippingDiscountProfiles($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('SetShippingDiscountProfiles', $request);
 	}
+
 	/**
 	 * @return SetStoreResponseType
-	 * @param SetStoreRequestType $request 
-	 */
+	 * @param SetStoreRequestType
+	 **/
 	function SetStore($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('SetStore', $request);
 	}
+
 	/**
 	 * @return SetStoreCategoriesResponseType
-	 * @param SetStoreCategoriesRequestType $request 
-	 */
+	 * @param SetStoreCategoriesRequestType
+	 **/
 	function SetStoreCategories($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('SetStoreCategories', $request);
 	}
+
 	/**
 	 * @return SetStoreCustomPageResponseType
-	 * @param SetStoreCustomPageRequestType $request 
-	 */
+	 * @param SetStoreCustomPageRequestType
+	 **/
 	function SetStoreCustomPage($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('SetStoreCustomPage', $request);
 	}
+
 	/**
 	 * @return SetStorePreferencesResponseType
-	 * @param SetStorePreferencesRequestType $request 
-	 */
+	 * @param SetStorePreferencesRequestType
+	 **/
 	function SetStorePreferences($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('SetStorePreferences', $request);
 	}
+
 	/**
 	 * @return SetTaxTableResponseType
-	 * @param SetTaxTableRequestType $request 
-	 */
+	 * @param SetTaxTableRequestType
+	 **/
 	function SetTaxTable($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('SetTaxTable', $request);
 	}
+
 	/**
 	 * @return SetUserNotesResponseType
-	 * @param SetUserNotesRequestType $request 
-	 */
+	 * @param SetUserNotesRequestType
+	 **/
 	function SetUserNotes($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('SetUserNotes', $request);
 	}
+
 	/**
 	 * @return SetUserPreferencesResponseType
-	 * @param SetUserPreferencesRequestType $request 
-	 */
+	 * @param SetUserPreferencesRequestType
+	 **/
 	function SetUserPreferences($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('SetUserPreferences', $request);
 	}
+
 	/**
 	 * @return UploadSiteHostedPicturesResponseType
-	 * @param UploadSiteHostedPicturesRequestType $request 
-	 */
+	 * @param UploadSiteHostedPicturesRequestType
+	 **/
 	function UploadSiteHostedPictures($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->callXmlStyle('UploadSiteHostedPictures', $request);
 	}
+
 	/**
 	 * @return ValidateChallengeInputResponseType
-	 * @param ValidateChallengeInputRequestType $request 
-	 */
+	 * @param ValidateChallengeInputRequestType
+	 **/
 	function ValidateChallengeInput($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('ValidateChallengeInput', $request);
 	}
+
 	/**
 	 * @return ValidateTestUserRegistrationResponseType
-	 * @param ValidateTestUserRegistrationRequestType $request 
-	 */
+	 * @param ValidateTestUserRegistrationRequestType
+	 **/
 	function ValidateTestUserRegistration($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('ValidateTestUserRegistration', $request);
 	}
+
 	/**
 	 * @return VeROReportItemsResponseType
-	 * @param VeROReportItemsRequestType $request 
-	 */
+	 * @param VeROReportItemsRequestType
+	 **/
 	function VeROReportItems($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('VeROReportItems', $request);
 	}
+
 	/**
 	 * @return VerifyAddFixedPriceItemResponseType
-	 * @param VerifyAddFixedPriceItemRequestType $request 
-	 */
+	 * @param VerifyAddFixedPriceItemRequestType
+	 **/
 	function VerifyAddFixedPriceItem($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('VerifyAddFixedPriceItem', $request);
 	}
+
 	/**
 	 * @return VerifyAddItemResponseType
-	 * @param VerifyAddItemRequestType $request 
-	 */
+	 * @param VerifyAddItemRequestType
+	 **/
 	function VerifyAddItem($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('VerifyAddItem', $request);
 	}
+
 	/**
 	 * @return VerifyAddSecondChanceItemResponseType
-	 * @param VerifyAddSecondChanceItemRequestType $request 
-	 */
+	 * @param VerifyAddSecondChanceItemRequestType
+	 **/
 	function VerifyAddSecondChanceItem($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('VerifyAddSecondChanceItem', $request);
 	}
+
 	/**
 	 * @return VerifyRelistItemResponseType
-	 * @param VerifyRelistItemRequestType $request 
-	 */
+	 * @param VerifyRelistItemRequestType
+	 **/
 	function VerifyRelistItem($request)
 	{
 		$request->setVersion(EBAY_WSDL_VERSION);
 		return $this->call('VerifyRelistItem', $request);
 	}
+
 
 }
 ?>

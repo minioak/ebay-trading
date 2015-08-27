@@ -1,6 +1,9 @@
 <?php
-// $Id: EbatNs_RequestHeaderType.php,v 1.3 2008-10-08 10:31:19 carsten Exp $
+// $Id: EbatNs_RequestHeaderType.php,v 1.2 2013-04-05 11:16:01 thomasbiniasch Exp $
 // $Log: EbatNs_RequestHeaderType.php,v $
+// Revision 1.2  2013-04-05 11:16:01  thomasbiniasch
+// bugfixes and template updates, first running version milestone!
+//
 // Revision 1.3  2008-10-08 10:31:19  carsten
 // changed the way the meta data is stored for schema objects. Now the information is helt in a static array (in EbatNs_ComplexType) for ALL schema classes.
 // Beside changes in the Core and the ComplexType class this will also need a different way how the schema-information is stored within the constructors of all generated schema-classes.
