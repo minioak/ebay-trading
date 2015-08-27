@@ -304,7 +304,7 @@ class EbatNs_Client
 	
 	protected function _startTp( $key )
 	{
-		if (!$this->_loggingOptions['LOG_TIMEPOINTS'])
+		if (!isset($this->_loggingOptions['LOG_TIMEPOINTS']))
 			return;
 		
 		if ( isset( $this->_timePoints[$key] ) )
@@ -318,7 +318,7 @@ class EbatNs_Client
 	
 	protected function _stopTp( $key )
 	{
-		if (!$this->_loggingOptions['LOG_TIMEPOINTS'])
+		if (!isset($this->_loggingOptions['LOG_TIMEPOINTS']))
 			return;
 		
 		if ( isset( $this->_timePoints[$key]['start'] ) )
@@ -332,7 +332,7 @@ class EbatNs_Client
 	
 	protected function _logTp()
 	{
-		if (!$this->_loggingOptions['LOG_TIMEPOINTS'])
+		if (!isset($this->_loggingOptions['LOG_TIMEPOINTS']))
 			return;
 		
 		// log the timepoint-information
