@@ -1003,6 +1003,99 @@ class EbatNs_Session {
 		$this->setUseStandardLogger($cfg['use_standard_logger']);
 	}
   }
+  
+    function InitFromArray($cfg)
+  {
+    $this->_keys['test'] = array($cfg['app-key-test'], $cfg['dev-key-test'], $cfg['cert-id-test']);
+    $this->_keys['prod'] = array($cfg['app-key-prod'], $cfg['dev-key-prod'], $cfg['cert-id-prod']);
+    if (isset($cfg['site-id']))
+        $this->setSiteId($cfg['site-id']);
+    if (isset($cfg['user']))
+        $this->setRequestUser($cfg['user']);
+    if (isset($cfg['password']))
+        $this->setRequestPassword($cfg['password']);
+    if (isset($cfg['app-mode']))
+        $this->setAppMode($cfg['app-mode']);
+    if (isset($cfg['api-mode']))
+        $this->setApiMode($cfg['api-mode']);
+    if (isset($cfg['compat-level']))
+        $this->setCompatibilityLevel($cfg['compat-level']);
+    if (isset($cfg['error-level']))
+        $this->setErrorLevel($cfg['error-level']);
+    if (isset($cfg['request-timeout']))
+        $this->setRequestTimeout($cfg['request-timeout']);
+    if (isset($cfg['serialize-folder']))
+        $this->setSerializeFolder($cfg['serialize-folder']);
+    if (isset($cfg['token-mode'])) {
+      $this->setTokenMode($cfg['token-mode']);
+    if (isset($cfg['token-pickup-file'])) {
+        $this->setTokenPickupFile($cfg['token-pickup-file']);
+        $this->setTokenUsePickupFile(true);
+      }
+    }
+    // only utf-8 encoding is allowed !!!
+    $this->setXmlEncoding(0);
+    if (isset($cfg['error-language'])) {
+      $this->setErrorLanguage($cfg['error-language']);
+    }else {
+      $this->setErrorLanguage(0);
+    }
+    if (isset($cfg['xml-extra-decode'])) {
+      $this->setDoXmlUtf8Decoding($cfg['xml-extra-decode']);
+    }else {
+      $this->setDoXmlUtf8Decoding(0);
+    }
+    if (isset($cfg['xml-extra-encode'])) {
+      $this->setDoXmlUtf8Encoding($cfg['xml-extra-encode']);
+    }else {
+      $this->setDoXmlUtf8Encoding(0);
+    }
+    if (isset($cfg['use-http-compression'])) {
+      $this->setUseHttpCompression($cfg['use-http-compression']);
+    }
+    if (isset($cfg['log-file'])) {
+      $this->setLogFilename($cfg['log-file']);
+    }
+    if (isset($cfg['log-level'])) {
+      $this->setLogLevel($cfg['log-level']);
+    }
+    if (isset($cfg['log-mode'])) {
+      $this->setLogMode($cfg['log-mode']);
+    }
+    if (isset($cfg['debug-showin'])) {
+      $this->setDebugSwitch('showin');
+    }
+    if (isset($cfg['debug-showout'])) {
+      $this->setDebugSwitch('showout');
+    }
+    if (isset($cfg['debug-profiling'])) {
+      $this->setDebugSwitch('profiling');
+    }
+    if (isset($cfg['debug-curl-verbose'])) {
+      $this->setDebugSwitch('curl-verbose');
+    }
+    if (isset($cfg['raw-log-mode'])) {
+      $this->setRawLogMode($cfg['raw-log-mode']);
+    }
+    if (isset($cfg['raw-log-path'])) {
+      $this->setRawLogPath($cfg['raw-log-path']);
+    }
+    if (isset($cfg['raw-log-name'])) {
+      $this->setRawLogName($cfg['raw-log-name']);
+    }
+    if (isset($cfg['raw-log-seq'])) {
+      $this->setRawLogSeq($cfg['raw-log-seq']);
+    }
+    if (isset($cfg['max-transactions-per-page'])) {
+      $this->_props['PageSize'] = $cfg['max-transactions-per-page'];
+      if ($this->_props['PageSize'] <= 0)
+        $this->_props['PageSize'] = 200;
+    }
+    if (isset($cfg['use_standard_logger'])) {
+		$this->setUseStandardLogger($cfg['use_standard_logger']);
+	}
+  }
+
   /**
    * Writes a log-message to the logFile
    * 
