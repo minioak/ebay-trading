@@ -155,7 +155,7 @@ class EbatNs_ComplexType extends EbatNs_SimpleType
         if ($class === null)
             $class = get_class($this);
         parent::unsetMetaData();
-        unset($this->_elements[$class]);
+        unset(self::$_elements[$class]);
     }
     
     public function getMetaDataElements($class = null)

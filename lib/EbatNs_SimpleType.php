@@ -122,12 +122,12 @@ class EbatNs_SimpleType
         return $this->{$key};
     }
     
-	public function __get($key)
+		public function __get($key)
     {
-        return isset($this->{$key}) ? $this->{$key} : false;
+	    	return isset($this->{$key}) ? $this->{$key} : false;
     }
     
-	public function __set($key, $value)
+		public function __set($key, $value)
     {
         $this->{$key} = $value;
     }

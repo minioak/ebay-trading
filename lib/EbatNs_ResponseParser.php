@@ -66,7 +66,7 @@ class EbatNs_ResponseParser
         
         $this->setOption('NO_ATTRIBUTES', false);
         $this->setOption('NO_UNSET_METADATA', false);
-        $this->setOption('NO_REDUCE', false);
+        $this->setOption('NO_REDUCE', true);
         $this->setOption('NO_EMPTY_ARRAYS');
         $this->setOption('NO_EMPTY_VALUES');
         $this->setOption('FLATTEN_ON_ARRAYTYPE');
