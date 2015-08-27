@@ -351,7 +351,7 @@ class EbatNs_Client
 	// callusage
 	protected function _incrementApiUsage($apiCall)
 	{
-		if (!$this->_loggingOptions['LOG_API_USAGE'])	
+		if (!isset($this->_loggingOptions['LOG_API_USAGE']))
 			return;
 		
 		$this->_callUsage[$apiCall] = $this->_callUsage[$apiCall] + 1;
