@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ALL ^ E_NOTICE);
+error_reporting(E_ALL & ~E_DEPRECATED & ~E_STRICT);
 
 require_once 'EbatNs_Logger.php';
 require_once 'EbatNs_Session.php';
