@@ -493,12 +493,12 @@ class EbatNs_Client
 		if ( $responseMsg )
 		{
 			$this->_startTp('Decoding SOAP Message');
-			$ret = & $this->decodeMessage( $method, $responseMsg, $parseMode );
+			$ret = $this->decodeMessage( $method, $responseMsg, $parseMode );
 			$this->_stopTp('Decoding SOAP Message');
 		}
 		else
 		{
-			$ret = & $this->_currentResult;
+			$ret = $this->_currentResult;
 		}
 		
 		$this->_stopTp('API call ' . $method);
@@ -719,12 +719,12 @@ class EbatNs_Client
 		if ( $responseMsg )
 		{
 			$this->_startTp('Decoding SOAP Message');
-			$ret = & $this->decodeMessage( $method, $responseMsg, $parseMode );
+			$ret =  $this->decodeMessage( $method, $responseMsg, $parseMode );
 			$this->_stopTp('Decoding SOAP Message');
 		}
 		else
 		{
-			$ret = & $this->_currentResult;
+			$ret =  $this->_currentResult;
 		}
 		
 		return $ret;
@@ -933,12 +933,12 @@ class EbatNs_Client
 		if ( $responseMsg )
 		{
 			$this->_startTp('Decoding SOAP Message');
-			$ret = & $this->decodeMessage( $method, $responseMsg, $parseMode );
+			$ret =  $this->decodeMessage( $method, $responseMsg, $parseMode );
 			$this->_stopTp('Decoding SOAP Message');
 		}
 		else
 		{
-			$ret = & $this->_currentResult;
+			$ret =  $this->_currentResult;
 		}
 		
 		return $ret;
