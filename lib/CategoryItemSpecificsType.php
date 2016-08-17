@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,7 +8,7 @@ require_once 'EbatNs_ComplexType.php';
 require_once 'NameValueListArrayType.php';
 
 /**
-  * Defines details about recommended names and values for custom Item Specifics.
+  * This type is used by the <b>CategorySpecific</b> container in the <b>GetCategorySpecifics</b> request. The  <b>CategorySpecific</b> container is used when a seller wants to pass in customized Item Specific name-value(s) pairs for a specific category to discover if eBay has better name or value recommendations for that Item Specific.
   * 
  **/
 

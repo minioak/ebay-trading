@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,7 +8,7 @@ require_once 'EbatNs_ComplexType.php';
 require_once 'MemberMessageType.php';
 
 /**
-  * Holds the content of the request.
+  * This type is used by the <b>AddMemberMessagesAAQToBidderRequestContainer</b> container. A <b>AddMemberMessagesAAQToBidderRequestContainer</b> container is required for each bidder the seller is sending a message to. The seller can communicate with up to 10 bidders with one <b>AddMemberMessagesAAQToBidder</b> call.
   * 
  **/
 

@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -26,7 +26,7 @@ require_once 'BiddingSummaryType.php';
   * Type to contain the data for one eBay user. Depending on the context, the user
   * might be the seller or the buyer on either side of an order, or the bidder or winning bidder
   * in a listing. An object of this type is returned by a number of calls, including
-  * the GetUser call.
+  * the <b>GetUser</b> call.
   * 
  **/
 

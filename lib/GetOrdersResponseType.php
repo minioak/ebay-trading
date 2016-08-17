@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -9,7 +9,7 @@ require_once 'PaginationResultType.php';
 require_once 'OrderArrayType.php';
 
 /**
-  * Returns the set of orders that match the order IDs or filter criteria specified.
+  * Retrieves the set of orders that match the order IDs or filter criteria specified.
   * 
  **/
 

@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,8 +7,7 @@
 require_once 'AbstractResponseType.php';
 
 /**
-  * Indicates the number of items currently in the user's Watch List and the maximum
-  * number of items allowed in the Watch List.
+  * This type defines the response of the <b>AddToWatchList</b> call. Along with data indicating the success or failure of adding one or more items to a user's Watch List, this response also includes the number of items currently in the user's Watch List and the maximum number of items allowed in the Watch List.
   * 
  **/
 

@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,7 +7,7 @@
 require_once 'EbatNs_ComplexType.php';
 
 /**
-  * Type defining the <b>BuyerRoleMetrics</b> container which is returned in the <b>GetFeedback</b> response. the <b>BuyerRoleMetrics</b> container consists of a eBay user's feedback statistics for the latest one-year period, dating back from the current date.
+  * Type defining the <b>BuyerRoleMetrics</b> container, which consists of details relating to the eBay buyer's one-year history of leaving feedback for the seller.
   * 
  **/
 

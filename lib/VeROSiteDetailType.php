@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -9,7 +9,7 @@ require_once 'SiteCodeType.php';
 require_once 'ReasonCodeDetailType.php';
 
 /**
-  * Container for reason code details for a given site.
+  * Type used by the <b>VeROSiteDetailType</b> container, which is returned in <b>GetVeROReasonCodeDetails</b>. Each <b>VeROSiteDetailType</b> container will contain one or more reasons how an eBay listing could possibly infringe upon the intellectual property rights of a product owner.
   * 
  **/
 

@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,7 +7,7 @@
 require_once 'EbatNs_ComplexType.php';
 
 /**
-  *   Contains a seller's preferences for receiving bidder notices.
+  *   This type is used by the <b>BidderNoticePreferences</b> container, which consists of the seller's preference for receiving contact information for unsuccessful bidders in auction listings.
   * 
  **/
 

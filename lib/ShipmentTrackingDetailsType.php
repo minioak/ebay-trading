@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,9 +8,9 @@ require_once 'EbatNs_ComplexType.php';
 require_once 'ShipmentLineItemType.php';
 
 /**
-  * This type details the shipping carrier and shipment tracking number associated with a
-  * package shipment. It also contains information about the line items shipped through the Global Shipping program.
-  * 
+  *         This type details the shipping carrier and shipment tracking number associated with a
+  *         package shipment. It also contains information about the line items shipped through the Global Shipping program.
+  *       
  **/
 
 class ShipmentTrackingDetailsType extends EbatNs_ComplexType

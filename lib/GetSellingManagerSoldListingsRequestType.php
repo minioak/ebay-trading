@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -13,7 +13,7 @@ require_once 'PaginationType.php';
 require_once 'TimeRangeType.php';
 
 /**
-  *   Returns a Selling Manager user's sold listings.
+  *   Retrieves a Selling Manager user's sold listings.
   * <br><br>
   * This call is subject to change without notice; the deprecation process is
   * inapplicable to this call.

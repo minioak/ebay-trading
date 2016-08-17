@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,10 +8,7 @@ require_once 'EbatNs_ComplexType.php';
 require_once 'VeROReportItemType.php';
 
 /**
-  * Type defining the <b>ReportItems</b> container in the 
-  * <b>VeROReportItems</b> request. The <b>ReportItems</b> container 
-  * consists of an array of items which, according to the seller, are infringing upon the
-  * seller's copyright, trademark, or intellectual property rights (according to the seller).
+  * Type defining the <b>ReportItems</b> container in the <b>VeROReportItems</b> request. The <b>ReportItems</b> container is an array of one or more eBay items which, according to the product's owner, are infringing upon the product owner's copyright, trademark, or intellectual property rights.
   * 
  **/
 

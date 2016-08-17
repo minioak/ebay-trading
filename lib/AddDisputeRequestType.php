@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -11,14 +11,7 @@ require_once 'ItemIDType.php';
 
 /**
   * Enables a seller to create an Unpaid Item case against a buyer, or to cancel a
-  * single line item order. 
-  * <br/><br/>
-  * <span class="tablenote"><b>Note:</b>
-  * This call is only used by sellers to create an Unpaid Item case or to mutually cancel a
-  * single line item order. Buyers must use the eBay Resolution Center or PayPal Resolution 
-  * Center (for orders that satisfy requirements) to create an Item Not Received or an Item
-  * Significantly Not as Described case. 
-  * </span>
+  * single line item order. The seller is eligible to open up an Unpaid Item case two days after the buyer purchases the item or wins the item through an auction. To cancel a multiple line item order programmatically, the seller would have to use the <a href="http://developer.ebay.com/Devzone/post-order/post-order_v2_cancellation__post.html target="_blank">POST /post-order/v2/cancellation</a> call of the <b>Post-Order API</b>.
   * 
  **/
 

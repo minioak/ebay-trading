@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -9,29 +9,16 @@ require_once 'BrandMPNType.php';
 require_once 'TicketListingDetailsType.php';
 
 /**
-  * Contains product information that can be included in a listing.
-  * Applicable for listings that use eBay's Pre-filled Item Information feature and listings in categories that require product identifiers.
-  * See <a href="http://developer.ebay.com/DevZone/guides/ebayfeatures/Development/ItemSpecifics-CatalogDetails.html">Pre-filling Item Specifics with Product Details</a>
-  * for details on working with Pre-filled Item Information.
+  * Type used by the <b>ProductListingDetails</b> container which is used by a seller in an add/revise/relist call to identify a product through a Global Trade Identification Number (EAN, ISBN, UPC, etc.)  and provide other information about that product. Just a unique product identifier along with help the seller pre-fill the listing information.
   * 
  **/
 
 class ProductListingDetailsType extends EbatNs_ComplexType
 {
 	/**
-	* @var string
-	**/
-	protected $ProductID;
-
-	/**
 	* @var boolean
 	**/
 	protected $IncludeStockPhotoURL;
-
-	/**
-	* @var boolean
-	**/
-	protected $IncludePrefilledItemInformation;
 
 	/**
 	* @var boolean
@@ -98,6 +85,11 @@ class ProductListingDetailsType extends EbatNs_ComplexType
 	**/
 	protected $UseFirstProduct;
 
+	/**
+	* @var boolean
+	**/
+	protected $IncludeeBayProductDetails;
+
 
 	/**
 	 * Class Constructor 
@@ -109,23 +101,7 @@ class ProductListingDetailsType extends EbatNs_ComplexType
 		{
 			self::$_elements[__CLASS__] = array_merge(self::$_elements[get_parent_class()],
 			array(
-				'ProductID' =>
-				array(
-					'required' => false,
-					'type' => 'string',
-					'nsURI' => 'http://www.w3.org/2001/XMLSchema',
-					'array' => false,
-					'cardinality' => '0..1'
-				),
 				'IncludeStockPhotoURL' =>
-				array(
-					'required' => false,
-					'type' => 'boolean',
-					'nsURI' => 'http://www.w3.org/2001/XMLSchema',
-					'array' => false,
-					'cardinality' => '0..1'
-				),
-				'IncludePrefilledItemInformation' =>
 				array(
 					'required' => false,
 					'type' => 'boolean',
@@ -236,27 +212,19 @@ class ProductListingDetailsType extends EbatNs_ComplexType
 					'nsURI' => 'http://www.w3.org/2001/XMLSchema',
 					'array' => false,
 					'cardinality' => '0..1'
+				),
+				'IncludeeBayProductDetails' =>
+				array(
+					'required' => false,
+					'type' => 'boolean',
+					'nsURI' => 'http://www.w3.org/2001/XMLSchema',
+					'array' => false,
+					'cardinality' => '0..1'
 				)));
 		}
 		$this->_attributes = array_merge($this->_attributes,
 		array(
 ));
-	}
-
-	/**
-	 * @return string
-	 **/
-	function getProductID()
-	{
-		return $this->ProductID;
-	}
-
-	/**
-	 * @return void
-	 **/
-	function setProductID($value)
-	{
-		$this->ProductID = $value;
 	}
 
 	/**
@@ -273,22 +241,6 @@ class ProductListingDetailsType extends EbatNs_ComplexType
 	function setIncludeStockPhotoURL($value)
 	{
 		$this->IncludeStockPhotoURL = $value;
-	}
-
-	/**
-	 * @return boolean
-	 **/
-	function getIncludePrefilledItemInformation()
-	{
-		return $this->IncludePrefilledItemInformation;
-	}
-
-	/**
-	 * @return void
-	 **/
-	function setIncludePrefilledItemInformation($value)
-	{
-		$this->IncludePrefilledItemInformation = $value;
 	}
 
 	/**
@@ -523,6 +475,22 @@ class ProductListingDetailsType extends EbatNs_ComplexType
 	function setUseFirstProduct($value)
 	{
 		$this->UseFirstProduct = $value;
+	}
+
+	/**
+	 * @return boolean
+	 **/
+	function getIncludeeBayProductDetails()
+	{
+		return $this->IncludeeBayProductDetails;
+	}
+
+	/**
+	 * @return void
+	 **/
+	function setIncludeeBayProductDetails($value)
+	{
+		$this->IncludeeBayProductDetails = $value;
 	}
 
 }

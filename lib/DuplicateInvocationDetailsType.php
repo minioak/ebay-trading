@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -9,7 +9,7 @@ require_once 'UUIDType.php';
 require_once 'InvocationStatusType.php';
 
 /**
-  * Contains properties that provide information on duplicate uses of InvocationIDs.
+  * This type is used by the <b>DuplicateInvocationDetails</b> container that is returned in some calls if a duplicate <b>InvocationID</b> or <b>InvocationTrackingID</b> is used in the call request.
   * 
  **/
 

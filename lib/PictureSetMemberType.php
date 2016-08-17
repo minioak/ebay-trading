@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,7 +7,7 @@
 require_once 'EbatNs_ComplexType.php';
 
 /**
-  * URL and size information for each generated and stored size.
+  * URL and size information for each generated and stored picture.
   * This data is provided for use in application previews of pictures.
   * This data is used for display control for specific pictures in the generated imageset.
   * This container is supplied for all generated pictures.

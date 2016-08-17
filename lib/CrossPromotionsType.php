@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -11,10 +11,7 @@ require_once 'PromotionMethodCodeType.php';
 require_once 'PromotedItemType.php';
 
 /**
-  * eBay Store Cross Promotions are no longer supported in the Trading API, so the 
-  * <b>CrossPromotion</b> container will either not be returned, or, if it is 
-  * returned, the data in the container may not be accurate. Contains one or
-  * more items cross-promoted with the display or purchase of a referring item.
+  * This type is deprecated.
   * 
  **/
 

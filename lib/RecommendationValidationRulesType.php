@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -13,8 +13,7 @@ require_once 'VariationSpecificsRuleCodeType.php';
 require_once 'ValueFormatCodeType.php';
 
 /**
-  * Defines rules for recommended Item Specifics. The rules apply when 
-  * the Item Specific is subsequently used in AddItem and related calls.
+  * This type is used by the <b>ValidationRules</b> containers returned in the <b>GetCategorySpecifics</b> response, which contains some rules and limits for the recommended Item Specific name (specified in the <b>NameRecommendation.Name</b> field) and corresponding value(s) (specified in the <b>ValueRecommendation.Value</b> field). These rules and limits will apply when the recommended Item Specific is subsequently used in Add/Revise/Relist call.
   * 
  **/
 

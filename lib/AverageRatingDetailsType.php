@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,9 +7,9 @@
 require_once 'EbatNs_ComplexType.php';
 require_once 'FeedbackRatingDetailCodeType.php';
 
-/** 
-  * Applicable to sites that support the Detailed Seller Ratings feature.
-  * The <b>AverageRatingDetailsType</b> container consists of the average detailed seller ratings in an area. When buyers leave an overall Feedback rating (positive, neutral, or negative) for a seller, they also can leave ratings in four areas: item as described, communication, shipping time, and charges for shipping and handling. Users retrieve detailed ratings as averages of the ratings left by buyers. 
+/**
+  * Applicable to sites that support the Detailed Seller Rating (DSR) feature.
+  * The <b>AverageRatingDetails</b> container consists of the average detailed seller ratings in an area. When buyers leave an overall Feedback rating (positive, neutral, or negative) for a seller, they also can leave ratings in four areas: item as described, communication, shipping time, and charges for shipping and handling. Users retrieve detailed ratings as averages of the ratings left by buyers.
   * 
  **/
 

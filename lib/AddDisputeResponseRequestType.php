@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -9,8 +9,8 @@ require_once 'DisputeIDType.php';
 require_once 'DisputeActivityCodeType.php';
 
 /**
-  * Enables the seller to respond to an Item Not Received dispute opened by a buyer through PayPal's Purchase Protection program, or to update an Unpaid Item dispute. To respond to an Item Not Received or Item Significantly Not As Described case opened through eBay's Resolution Center, the seller should use the <a href="http://developer.ebay.com/Devzone/resolution-case-management/CallRef/index.html" target="_blank">Resolution Case Management API</a>, or manage the case through the eBay Resolution Center.
-  * 
+  *         This call enables the seller to respond to an Item Not Received (INR) dispute opened by a buyer through PayPal's Purchase Protection program, or to update an Unpaid Item case. To respond to a case opened by the buyer through eBay's Resolution Center, the seller should use the <a href="http://developer.ebay.com/Devzone/resolution-case-management/CallRef/index.html" target="_blank">Resolution Case Management API</a>, the <a href="http://developer.ebay.com/Devzone/post-order/index.html" target="_blank">Case Management calls</a> of the <b>Post-Order API</b>, or manage the case through the eBay Resolution Center.
+  *       
  **/
 
 class AddDisputeResponseRequestType extends AbstractRequestType

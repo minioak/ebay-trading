@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,10 +8,7 @@ require_once 'AbstractResponseType.php';
 require_once 'ItemArrayType.php';
 
 /**
-  * Contains the items returned by the call. Items for which a seller event has
-  * occurred (and that meet any filters specified as input) are returned in an
-  * ItemArrayType object, within which are zero, one, or multiple ItemType objects.
-  * Each ItemType object contains the detail data for one item listing.
+  * Returns the items in an <b>ItemArrayType</b> object for the a seller events that have occurred and that meet any filters specified. There can be zero, one, or multiple <b>ItemType</b> objects. Each <b>ItemType</b> object contains the detail data for one item listing.
   * 
  **/
 

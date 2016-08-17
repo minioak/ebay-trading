@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -10,9 +10,8 @@ require_once 'MyeBaySelectionType.php';
 require_once 'BidAssistantListType.php';
 
 /**
-  * Returns items from the Buying section of the user's My eBay
-  * account, including items that the user is watching, bidding on, has
-  * won, has not won, and has made best offers on.
+  * Retrieves information regarding a user's buying activity, such as items they are watching, bidding on, have
+  * won, did not win, and have made Best Offers on.
   * 
  **/
 

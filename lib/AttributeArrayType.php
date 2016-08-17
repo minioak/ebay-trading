@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,8 +8,7 @@ require_once 'EbatNs_ComplexType.php';
 require_once 'AttributeType.php';
 
 /**
-  * This type defines the <b>AttributeArray</b> container, which is used by the
-  * seller to specify one or more attribute values for a Half.com item.
+  * This type defines the <b>AttributeArray</b> container, which is used by the seller to specify one or more attribute values for a Half.com item. This type is only used by Half.com listings.
   * 
  **/
 

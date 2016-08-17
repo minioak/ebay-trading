@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -10,8 +10,7 @@ require_once 'BidGroupItemStatusCodeType.php';
 require_once 'AmountType.php';
 
 /**
-  * This type is deprecated as the Bid Assistant feature is no longer available.
-  *  
+  * This type is deprecated.
   * 
  **/
 

@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -9,7 +9,7 @@ require_once 'ItemIDType.php';
 require_once 'FeesType.php';
 
 /**
-  * Returns values indicating information for a new listing.
+  * Returns the item ID, the estimated fees for the new listing (except the Final Value Fee, which isn't calculated until the item has sold), the start and end times of the listing, and other details.
   * 
  **/
 

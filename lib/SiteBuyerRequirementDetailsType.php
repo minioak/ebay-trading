@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -13,13 +13,13 @@ require_once 'VerifiedUserRequirementsDetailsType.php';
 
 /**
   * Type defining the <b>BuyerRequirementDetails</b> container, which is returned in
-  * GeteBayDetails, and provides the seller with the buyer requirement features (and applicable
+  * <b>GeteBayDetails</b>, and provides the seller with the buyer requirement features (and applicable
   * values) that are supported by the listing site.
   * <br/><br/>
   * <span class="tablenote"><b>Note: </b>
-  * This container is only returned if <b>BuyerRequirementDetails</b> is included as a <b>DetailName</b> 
-  * filter in the request, or if no <b>DetailName</b> filters are used in the request.
-  * </span>  <br/><br/>
+  * This container is only returned if <b>BuyerRequirementDetails</b> is included as a <b>DetailName</b>
+  * filter in the call request, or if no <b>DetailName</b> filters are used in the request.
+  * </span>
   * 
  **/
 

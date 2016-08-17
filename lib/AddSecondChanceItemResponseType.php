@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,7 +8,7 @@ require_once 'AbstractResponseType.php';
 require_once 'ItemIDType.php';
 
 /**
-  * Type defining the response container of an <b>AddSecondChanceItem</b> call. This response container consists of the <b>ItemID</b> of the listing in which a Second Chance offer is being offered, as well as the start and end time that the Second Chance offer is available to the previous bidder (identified through the <b>RecipientBidderUserID</b> in the request).
+  * Type defining the response container of an <b>AddSecondChanceItem</b> call. This response container consists of the <b>ItemID</b> of the listing in which a Second Chance Offer is being offered, as well as the start and end time that the Second Chance Offer is available to the recipient (identified through the <b>RecipientBidderUserID</b> in the request).
   * 
  **/
 

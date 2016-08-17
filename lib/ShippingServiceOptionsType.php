@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -11,18 +11,18 @@ require_once 'ShippingPackageInfoType.php';
 /**
   * Container consisting of shipping costs and other details related to a domestic
   * shipping service. An exception to the domestic shipping service rule is seen in the
-  * ShippingServiceSelected container returned under the Order and Transaction
-  * containers in order and order line item retrieval calls such as GetOrders or
-  * GetItemTransactions. In this scenario, the SelectedShippingService container
+  * <b>ShippingServiceSelected</b> container returned under the <b>Order</b> and Transact<b>ion</b>
+  * containers in order and order line item retrieval calls such as <b>GetOrders</b> or
+  * <b>GetItemTransactions</b>. In this scenario, the <b>SelectedShippingService</b> container
   * consists of either domestic or international shipping service data, based on the
   * selected service according to the buyer's shipping address.
   * <br/><br/>
   * If one or more international shipping services are provided, the
   * seller must specify at least one domestic shipping service as well.
   * <br/><br/>
-  *             <span class="tablenote">
-  *             <strong>Note:</strong> For GetItemTransactions and GetSellerTransactions, this container does not return accurate shipping service and cost information for multiple line item orders. Use GetOrders instead, and provide the order's combined <strong>OrderID</strong> to retrieve this information.
-  *             </span>
+  * <span class="tablenote">
+  * <strong>Note:</strong> For <b>GetItemTransactions</b> and <b>GetSellerTransactions</b>, this container does not return accurate shipping service and cost information for multiple line item orders. Use <b>GetOrders</b> instead, and provide the order's combined <strong>OrderID</strong> to retrieve this information.
+  * </span>
   * 
  **/
 

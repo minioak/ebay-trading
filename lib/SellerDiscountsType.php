@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -10,7 +10,7 @@ require_once 'SellerDiscountType.php';
 
 /**
   * Type defining the <b>SellerDiscounts</b> container, which consists of one or
-  * more <b>SellerDiscount</b> nodes, as well as the original purchase price and 
+  * more <b>SellerDiscount</b> nodes, as well as the original purchase price and
   * shipping cost of the order line item.
   * 
  **/

@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -9,6 +9,10 @@ require_once 'AbstractRequestType.php';
 /**
   * Retrieves a botblock token and URLs for an image or audio clip that the user is to
   * match.
+  * <br/><br/>
+  * <span class="tablenote"><strong>Note:</strong>
+  * The call does not have any input parameters.
+  * </span>
   * 
  **/
 

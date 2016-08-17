@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,9 +8,7 @@ require_once 'EbatNs_ComplexType.php';
 require_once 'WantItNowPostType.php';
 
 /**
-  * Container for a list of search result items. Can contain zero, one, or multiple
-  * WantItNowPostType objects, each of which contains data for a single Want It Now
-  * post found by the search.
+  * This type is deprecated.
   * 
  **/
 

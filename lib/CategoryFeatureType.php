@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -26,7 +26,7 @@ require_once 'PaymentOptionsGroupEnabledCodeType.php';
 require_once 'ProfileCategoryGroupCodeType.php';
 
 /**
-  * Type defining the <b>Category</b> container that is returned in the <b>GetCategoryFeatures</b> response. A <b>Category</b> node is returned for each category that is relevant/applicable to the input criteria in the <b>GetCategoryFeatures</b> request.  The <b>CategoryID</b> value identifies the eBay category. The rest of the <b>CategoryFeatureType</b> fields that are returned will be dependent on which <b>FeatureID</b> value(s) are specified in the <b>GetCategoryFeatures</b> request.
+  * Type defining the <b>Category</b> container that is returned in the <b>GetCategoryFeatures</b> response. A <b>Category</b> node is returned for each category that is relevant/applicable to the input criteria in the <b>GetCategoryFeatures</b> request. The <b>CategoryID</b> value identifies the eBay category. The rest of the <b>CategoryFeatureType</b> fields that are returned will be dependent on which <b>FeatureID</b> value(s) are specified in the <b>GetCategoryFeatures</b> request.
   * 
  **/
 
@@ -661,6 +661,16 @@ class CategoryFeatureType extends EbatNs_ComplexType
 	* @var boolean
 	**/
 	protected $DigitalGoodDeliveryEnabled;
+
+	/**
+	* @var boolean
+	**/
+	protected $EpidSupported;
+
+	/**
+	* @var boolean
+	**/
+	protected $KTypeSupported;
 
 
 	/**
@@ -1674,6 +1684,22 @@ class CategoryFeatureType extends EbatNs_ComplexType
 					'cardinality' => '0..1'
 				),
 				'DigitalGoodDeliveryEnabled' =>
+				array(
+					'required' => false,
+					'type' => 'boolean',
+					'nsURI' => 'http://www.w3.org/2001/XMLSchema',
+					'array' => false,
+					'cardinality' => '0..1'
+				),
+				'EpidSupported' =>
+				array(
+					'required' => false,
+					'type' => 'boolean',
+					'nsURI' => 'http://www.w3.org/2001/XMLSchema',
+					'array' => false,
+					'cardinality' => '0..1'
+				),
+				'KTypeSupported' =>
 				array(
 					'required' => false,
 					'type' => 'boolean',
@@ -3753,6 +3779,38 @@ class CategoryFeatureType extends EbatNs_ComplexType
 	function setDigitalGoodDeliveryEnabled($value)
 	{
 		$this->DigitalGoodDeliveryEnabled = $value;
+	}
+
+	/**
+	 * @return boolean
+	 **/
+	function getEpidSupported()
+	{
+		return $this->EpidSupported;
+	}
+
+	/**
+	 * @return void
+	 **/
+	function setEpidSupported($value)
+	{
+		$this->EpidSupported = $value;
+	}
+
+	/**
+	 * @return boolean
+	 **/
+	function getKTypeSupported()
+	{
+		return $this->KTypeSupported;
+	}
+
+	/**
+	 * @return void
+	 **/
+	function setKTypeSupported($value)
+	{
+		$this->KTypeSupported = $value;
 	}
 
 }

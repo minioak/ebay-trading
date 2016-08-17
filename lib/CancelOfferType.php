@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,9 +8,7 @@ require_once 'EbatNs_ComplexType.php';
 require_once 'OfferType.php';
 
 /**
-  * Container for a list of offers. May contain zero, one, or multiple
-  * OfferType objects, each of which represents one offer extended by
-  * a user on a listing.
+  * This type is deprecated.
   * 
  **/
 

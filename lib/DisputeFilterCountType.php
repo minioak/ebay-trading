@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -9,6 +9,10 @@ require_once 'DisputeFilterTypeCodeType.php';
 
 /**
   * The number of disputes that match a given filter.
+  * <br/><br/>
+  * <span class="tablenote"><strong>Note:</strong>
+  * These are not eBay money back guarantee disputes.
+  * </span>
   * 
  **/
 

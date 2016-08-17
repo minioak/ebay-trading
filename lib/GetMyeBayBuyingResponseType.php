@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -15,7 +15,8 @@ require_once 'BidGroupArrayType.php';
 require_once 'UserDefinedListType.php';
 
 /**
-  * Returns items from All Buying or All Favorites in the user's My eBay account.
+  * Returns information regarding a user's buying activity, such as items they are watching, bidding on, have
+  * won, did not win, and have made Best Offers on..
   * 
  **/
 

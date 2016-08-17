@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,7 +7,8 @@
 require_once 'AbstractResponseType.php';
 
 /**
-  * Response to DisableUnpaidItemAssistance request.
+  * Response of the <b>DisableUnpaidItemAssistance</b> call, which includes only
+  * the standard response fields like <b>Ack</b>, <b>Timestamp</b>, <b>Errors</b>, etc.
   * 
  **/
 

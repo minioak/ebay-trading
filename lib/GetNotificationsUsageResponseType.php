@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -13,15 +13,18 @@ require_once 'NotificationStatisticsType.php';
   * Returns an array of notifications sent to a given application identified by the appID
   * (comes in the credentials). The result can be used by third-party developers troubleshoot
   * issues with notifications.
+  * <br/><br/>
   * Zero, one or many notifications can be returned in the array. The set of notifications
-  * returned is limited to those that were sent between the StartTime and EndTime specified
-  * in the request. If StartTime or EndTime filters were not found in the request, then
+  * returned is limited to those that were sent between the <b>StartTime</b> and <b>EndTime</b> specified
+  * in the request. 
+  * <br/><br/>
+  * If <b>StartTime</b> or <b>EndTime</b> filters were not found in the request, then
   * the response will contain the data for only one day (Now-1day). By default, maximum
   * duration is limited to 3 days (Now-3days). These min (1day) and max(3days) applies
-  * to Notifications,MarkDownMarkUpHistory and NotificationStatistics.
-  * 
-  * Notifications are sent only if the ItemID is included in the request. If there is no
-  * ItemID, then only Statistics and MarkDownMarkUpHistory information is included.
+  * to <b>Notifications</b>, <b>MarkDownMarkUpHistory</b> and <b>NotificationStatistics</b>.
+  * <br/><br/>
+  * Notifications are sent only if the <b>ItemID</b> is included in the request. If there is no
+  * <b>ItemID</b>, then only <b>Statistics</b> and <b>MarkDownMarkUpHistory</b> information is included.
   * 
  **/
 

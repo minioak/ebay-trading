@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,10 +8,8 @@ require_once 'EbatNs_ComplexType.php';
 require_once 'FeedbackSummaryPeriodCodeType.php';
 require_once 'AverageRatingDetailsType.php';
 
-/** 
-  * Container for average detailed seller ratings.
-  * If a seller has detailed ratings, they are displayed
-  * in the Feedback Profile of the seller.
+/**
+  * This type is used by the <b>AverageRatingSummary</b> container that is returned in the <b>GetFeedback</b> call to display the seller's rating information across the four different Detail Seller Rating areas. The Detail Seller Rating subject areas include Item as Described, Communication, Shipping Time, and Shipping and Handling charges.
   * 
  **/
 

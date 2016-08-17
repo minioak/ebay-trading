@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -135,11 +135,11 @@ require_once 'GlobalShippingEnabledDefinitionType.php';
 require_once 'AdditionalCompatibilityEnabledDefinitionType.php';
 require_once 'PickupDropOffEnabledDefinitionType.php';
 require_once 'DigitalGoodDeliveryEnabledDefinitionType.php';
+require_once 'EpidSupportedDefinitionType.php';
+require_once 'KTypeSupportedDefinitionType.php';
 
 /**
-  * A container node for definitions of the features specified in FeatureID in the
-  * GetCategoryFeatures request. If no feature ID was specified, all definitions are
-  * returned.
+  * This type is used by the <b>FeatureDefinitions</b> container that is returned in the <b>GetCategoryFeatures</b> response to indicate which eBay features are available for the corresponding eBay site that is passed in the request header. If no <b>FeatureID</b> field is included in the call request, all eBay features available for the eBay site are returned. If one or more <b>FeatureID</b> fields are included in the call request, only those eBay features specified in each <b>FeatureID</b> field is returned in the response.
   * 
  **/
 
@@ -804,6 +804,16 @@ class FeatureDefinitionsType extends EbatNs_ComplexType
 	* @var DigitalGoodDeliveryEnabledDefinitionType
 	**/
 	protected $DigitalGoodDeliveryEnabled;
+
+	/**
+	* @var EpidSupportedDefinitionType
+	**/
+	protected $EpidSupported;
+
+	/**
+	* @var KTypeSupportedDefinitionType
+	**/
+	protected $KTypeSupported;
 
 
 	/**
@@ -1868,6 +1878,22 @@ class FeatureDefinitionsType extends EbatNs_ComplexType
 				array(
 					'required' => false,
 					'type' => 'DigitalGoodDeliveryEnabledDefinitionType',
+					'nsURI' => 'urn:ebay:apis:eBLBaseComponents',
+					'array' => false,
+					'cardinality' => '0..1'
+				),
+				'EpidSupported' =>
+				array(
+					'required' => false,
+					'type' => 'EpidSupportedDefinitionType',
+					'nsURI' => 'urn:ebay:apis:eBLBaseComponents',
+					'array' => false,
+					'cardinality' => '0..1'
+				),
+				'KTypeSupported' =>
+				array(
+					'required' => false,
+					'type' => 'KTypeSupportedDefinitionType',
 					'nsURI' => 'urn:ebay:apis:eBLBaseComponents',
 					'array' => false,
 					'cardinality' => '0..1'
@@ -3988,6 +4014,38 @@ class FeatureDefinitionsType extends EbatNs_ComplexType
 	function setDigitalGoodDeliveryEnabled($value)
 	{
 		$this->DigitalGoodDeliveryEnabled = $value;
+	}
+
+	/**
+	 * @return EpidSupportedDefinitionType
+	 **/
+	function getEpidSupported()
+	{
+		return $this->EpidSupported;
+	}
+
+	/**
+	 * @return void
+	 **/
+	function setEpidSupported($value)
+	{
+		$this->EpidSupported = $value;
+	}
+
+	/**
+	 * @return KTypeSupportedDefinitionType
+	 **/
+	function getKTypeSupported()
+	{
+		return $this->KTypeSupported;
+	}
+
+	/**
+	 * @return void
+	 **/
+	function setKTypeSupported($value)
+	{
+		$this->KTypeSupported = $value;
 	}
 
 }

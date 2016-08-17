@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -9,7 +9,7 @@ require_once 'SellingManagerTemplateDetailsArrayType.php';
 
 /**
   * Contains the templates requested on input. 
-  * Each SellingManagerTemplateType object in the response contains the data for one
+  * Each <b>SellingManagerTemplateType</b> object in the response contains the data for one
   * Selling Manager template.
   * 
  **/

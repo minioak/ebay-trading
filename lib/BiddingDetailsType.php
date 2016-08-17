@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,8 +8,8 @@ require_once 'EbatNs_ComplexType.php';
 require_once 'AmountType.php';
 
 /**
-  * Type defining the <b>BiddingDetails</b> container, which consists of 
-  * information about the buyer's bidding history on a single auction item. 
+  * Type defining the <b>BiddingDetails</b> container, which consists of
+  * information about the buyer's bidding history on a single auction item.
   * 
  **/
 

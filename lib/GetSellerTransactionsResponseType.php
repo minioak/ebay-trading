@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -13,12 +13,14 @@ require_once 'TransactionArrayType.php';
   * Returns an array of order line item (transaction) data for the seller specified in the request.
   * The results can be used to create a report of data that is commonly
   * necessary for order processing.
+  * <br/><br/>
   * Zero, one, or many <b>Transaction</b> objects can be returned in the <b>TransactionArray</b>.
   * The set of order line items returned is limited to those that were modified between
   * the times specified in the request's <b>ModTimeFrom</b> and <b>ModTimeTo</b> filters.
   * The order line items returned are sorted by <b>Transaction.Status.LastTimeModified</b>,
   * ascending order (that is, order line items that more recently were modified are returned last).
-  * Also returns information about the seller whose order line items were requested.
+  * This call also returns information about the seller whose order line items were requested.
+  * <br/><br/>
   * If pagination filters were specified in the request, returns meta-data describing
   * the effects of those filters on the current response and the estimated effects if
   * the same filters are used in subsequent calls.

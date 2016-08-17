@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -18,13 +18,13 @@ require_once 'CurrencyCodeType.php';
   * 
   * Three-digit code representing the currency type being used. <br>
   * <br>
-  * In Add/Revise/Relist calls, the currency can be specified in
+  * In <b>Add</b>/<b>Revise</b>/<b>Relist</b> calls, the currency can be specified in
   * the <b>Item.Currency</b> field in requests instead.
-  * If you do specify this attribute in Add/Revise/Relist calls,
+  * If you do specify this attribute in <b>Add</b>/<b>Revise</b>/<b>Relist</b> calls,
   * the value must match the site currency (i.e., it must be the same
   * as the value in <b>Item.Currency</b>) unless otherwise stated.<br>
   * <br>
-  * In Add/Revise/Relist calls, listing fees are returned in the
+  * In <b>Add</b>/<b>Revise</b>/<b>Relist</b> calls, listing fees are returned in the
   * currency of the user's registration site.
   * For example, a user who is registered on the eBay US site always
   * sees their fees returned in USD, even when their listing request

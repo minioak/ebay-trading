@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -9,9 +9,7 @@ require_once 'AccessRuleCurrentStatusCodeType.php';
 require_once 'AccessRuleStatusCodeType.php';
 
 /**
-  * Contains the definition of a rule that governs the number of times your
-  * application can access the eBay API (invoke a call) on an hourly, daily, or
-  * periodic basis.
+  * This type is used by the <b>ApiAccessRule</b> container that is returned in the <b>GetApiAccessRules</b> call response. An <b>ApiAccessRule</b> container will be returned for every Trading API call that the user/application has used. The <b>ApiAccessRule</b> container consists of hourly, daily, and periodic call limits for the call, the total number of times the call was used, and other information about usage of the call.
   * 
  **/
 

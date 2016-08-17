@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,9 +7,9 @@
 require_once 'EbatNs_ComplexType.php';
 
 /**
-  * Indicates whether the category supports the use of a company name 
-  * when contacting the seller about Classified Ad format listings.
-  * Added for EbayMotors Pro users.
+  * Indicates whether the site supports the use of a company name
+  * when contacting the seller about eBay Motors Classified Ad listings.
+  * This feature is only applicable for eBay Motors Pro users.
   * 
  **/
 

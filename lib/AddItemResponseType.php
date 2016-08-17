@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -12,9 +12,7 @@ require_once 'ProductSuggestionsType.php';
 require_once 'ListingRecommendationsType.php';
 
 /**
-  * Returns the Item ID, SKU (if any), listing recommendations (if applicable), the
-  * estimated fees for the new listing (except the Final Value Fee, which isn't calculated
-  * until the item has sold), the start and end times of the listing, and other details.
+  * The base response of the <b>AddItem</b> call. The response will include the Item ID of the newly created listing, SKU (if any), listing recommendations (if applicable), the estimated fees for the new listing (except the Final Value Fee, which isn't calculated until the item has sold), the start and end times of the listing, and other details.
   * 
  **/
 

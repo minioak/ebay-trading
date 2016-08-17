@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,12 +8,7 @@ require_once 'EbatNs_ComplexType.php';
 require_once 'UserIDType.php';
 
 /**
-  * Information that identifies a buying guide. A buying guide provides content about particular
-  * product areas, categories, or subjects to help buyers decide which type of item
-  * to purchase based on their particular interests.
-  * Buying guides are useful to buyers who do not have a specific product in mind.
-  * For example, a digital camera buying guide could help a buyer determine what kind of
-  * digital camera is right for them.
+  * This type is not used by any Trading API calls.
   * 
  **/
 

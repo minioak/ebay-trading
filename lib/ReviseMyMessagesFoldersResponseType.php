@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,6 +7,8 @@
 require_once 'AbstractResponseType.php';
 
 /**
+  * The response of a <b>ReviseMyMessagesFolders</b> call only includes the standard response fields for Trading API calls, such as the <b>Ack</b>  field (to indicate the success or failure of the call), the timestamp, and an <b>Errors</b> container (if there were any errors and/or warnings).
+  * 
  **/
 
 class ReviseMyMessagesFoldersResponseType extends AbstractResponseType

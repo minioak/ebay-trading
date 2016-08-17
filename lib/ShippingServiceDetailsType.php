@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -13,8 +13,8 @@ require_once 'AnnouncementMessageType.php';
 require_once 'ShippingServicePackageDetailsType.php';
 
 /**
-  * Details about a specific shipping service.
-  * 
+  *         Details about a specific shipping service.
+  *       
  **/
 
 class ShippingServiceDetailsType extends EbatNs_ComplexType

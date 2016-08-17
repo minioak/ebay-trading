@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -12,7 +12,7 @@ require_once 'GranularityLevelCodeType.php';
 require_once 'SKUArrayType.php';
 
 /**
-  * Returns a list of the items posted by the authenticated user, including
+  * Retrieves a list of the items posted by the authenticated user, including
   * the related item data.
   * 
  **/

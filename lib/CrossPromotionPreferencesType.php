@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -10,15 +10,7 @@ require_once 'GallerySortFilterCodeType.php';
 require_once 'ItemSortFilterCodeType.php';
 
 /**
-  *  Contains preferences describing how items similar to the one the user is
-  *   presently viewing are promoted.
-  *   <br><br>
-  * <span class="tablenote"><b>Note:</b>
-  * eBay Store Cross Promotions are no longer supported in the Trading API, so the 
-  * <b>CrossPromotionPreferences</b> container and the 
-  * <b>ShowCrossPromotionPreferences</b> flag (in 
-  *   <b>GetUserPreferences</b>) should no longer be used/set.
-  * </span>
+  * This type is deprecated.
   * 
  **/
 

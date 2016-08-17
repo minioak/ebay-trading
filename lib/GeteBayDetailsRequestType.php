@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -19,14 +19,14 @@ require_once 'DetailNameCodeType.php';
   * In some cases, the data returned in the response will vary according to
   * the site that you use for the request.
   * <br><br>
-  * If you use GeteBayDetails in preparation for listing in the US Motors Parts
+  * If you use <b>GeteBayDetails</b> in preparation for listing in the US Motors Parts
   * and Accessories categories, use site ID 0 (which is the site ID of the US
-  * site) when you call GeteBayDetails.
+  * site) when you call <b>GeteBayDetails</b>.
   * <br><br>
   * Sellers who engage in cross-border trade on sites that require a recoupment agreement, must agree to the
   * recoupment terms before adding items to the site. This agreement allows eBay to reimburse
   * a buyer during a dispute and then recoup the cost from the seller. Information about whether a site
-  *         is a recoupment site is returned in the GeteBayDetailsResponse.RecoupmentPolicyDetails container.
+  *         is a recoupment site is returned in the <b>GeteBayDetailsResponse.RecoupmentPolicyDetails</b> container.
   * 
  **/
 

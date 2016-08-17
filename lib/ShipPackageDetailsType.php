@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -13,8 +13,13 @@ require_once 'ShippingPackageCodeType.php';
   * Details pertinent to one or more items for which
   * calculated shipping (or flat rate shipping using shipping rate tables with
   * weight surcharges) has been offered by the seller, such as package
-  * dimension and weight and packaging/handling costs. Also returned
-  * with the data for an item's transaction.
+  * dimension and weight and packaging/handling costs.
+  * <br/><br/>
+  * Also returned with the data for an item's transaction.
+  * <br/><br/>
+  * <span class="tablenote"><strong>Note:</strong>
+  * The <strong>ShippingPackageDetails</strong> container should now be used instead of the <strong>CalculatedShippingRate</strong> container to specify values for the <strong>MeasurementUnit</strong>, <strong>PackageDepth</strong>,  <strong>PackageWidth</strong>, <strong>PackageLength</strong>, <strong>ShippingIrregular</strong>, <strong>ShippingPackage</strong>, <strong>WeightMajor</strong>, and/or <strong>WeightMinor</strong> fields. The <strong>CalculatedShippingRate</strong> container should only be used to specify values for the <strong>InternationalPackagingHandlingCosts</strong>, <strong>OriginatingPostalCode</strong>, and/or <strong>PackagingHandlingCosts</strong> fields.
+  * </span>
   * 
  **/
 

@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -9,11 +9,11 @@ require_once 'ItemIDType.php';
 require_once 'CommentTypeCodeType.php';
 require_once 'UserIDType.php';
 require_once 'ItemRatingDetailArrayType.php';
+require_once 'ItemArrivedWithinEDDCodeType.php';
 
 /**
   * Enables a buyer and seller to leave feedback for their order partner at the
-  * conclusion of a successful order. Feedback is left at the order line item level, 
-  * so multiple line item orders may have multiple Feedback entries.&nbsp;<b>
+  * conclusion of a successful order. &nbsp;<b>
   * Also for Half.com</b>.
   * 
  **/
@@ -54,6 +54,16 @@ class LeaveFeedbackRequestType extends AbstractRequestType
 	* @var string
 	**/
 	protected $OrderLineItemID;
+
+	/**
+	* @var ItemArrivedWithinEDDCodeType
+	**/
+	protected $ItemArrivedWithinEDDType;
+
+	/**
+	* @var boolean
+	**/
+	protected $ItemDeliveredWithinEDD;
 
 
 	/**
@@ -118,6 +128,22 @@ class LeaveFeedbackRequestType extends AbstractRequestType
 				array(
 					'required' => false,
 					'type' => 'string',
+					'nsURI' => 'http://www.w3.org/2001/XMLSchema',
+					'array' => false,
+					'cardinality' => '0..1'
+				),
+				'ItemArrivedWithinEDDType' =>
+				array(
+					'required' => false,
+					'type' => 'ItemArrivedWithinEDDCodeType',
+					'nsURI' => 'urn:ebay:apis:eBLBaseComponents',
+					'array' => false,
+					'cardinality' => '0..1'
+				),
+				'ItemDeliveredWithinEDD' =>
+				array(
+					'required' => false,
+					'type' => 'boolean',
 					'nsURI' => 'http://www.w3.org/2001/XMLSchema',
 					'array' => false,
 					'cardinality' => '0..1'
@@ -238,6 +264,38 @@ class LeaveFeedbackRequestType extends AbstractRequestType
 	function setOrderLineItemID($value)
 	{
 		$this->OrderLineItemID = $value;
+	}
+
+	/**
+	 * @return ItemArrivedWithinEDDCodeType
+	 **/
+	function getItemArrivedWithinEDDType()
+	{
+		return $this->ItemArrivedWithinEDDType;
+	}
+
+	/**
+	 * @return void
+	 **/
+	function setItemArrivedWithinEDDType($value)
+	{
+		$this->ItemArrivedWithinEDDType = $value;
+	}
+
+	/**
+	 * @return boolean
+	 **/
+	function getItemDeliveredWithinEDD()
+	{
+		return $this->ItemDeliveredWithinEDD;
+	}
+
+	/**
+	 * @return void
+	 **/
+	function setItemDeliveredWithinEDD($value)
+	{
+		$this->ItemDeliveredWithinEDD = $value;
 	}
 
 }

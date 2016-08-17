@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,7 +7,7 @@
 require_once 'EbatNs_ComplexType.php';
 
 /**
-  * Type defining the <b>ShippingPackageInfoType</b> container, which is returned in order management calls. Various fields are returned if the order is being delivered through eBay Now; other fields are returned for non-eBay Now orders.
+  * Type defining the <b>ShippingPackageInfoType</b> container, which is returned in order management calls. The <b>ShippingPackageInfoType</b> container provides information on delivery times and tracking information for a shipping package.
   * 
  **/
 

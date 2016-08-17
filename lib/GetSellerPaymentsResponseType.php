@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -11,14 +11,20 @@ require_once 'SellerPaymentType.php';
 /**
   * Returns a summary of pending or paid payments that Half.com created for the seller
   * identified by the authentication token in the request. Only returns payments that
-  * occurred within a particular pay period. Each payment is for one transaction for
+  * occurred within a particular pay period. 
+  * <br/><br/>
+  * Each payment is for one transaction for
   * one item in one order. An order can contain transactions for multiple items from
   * multiple sellers, but this call only retrieves payments that are relevant to one
-  * seller. Payments are only issued for items and transactions that the seller has
+  * seller. 
+  * <br/><br/>
+  * Payments are only issued for items and transactions that the seller has
   * confirmed (see the Half.com online help for details). The financial value of a
   * payment is typically based on an amount that a buyer paid to Half.com for a
   * transaction, plus the shipping cost the buyer paid to Half.com for the item, minus
-  * Half.com's commission. For most sellers, each month contains two pay periods: One
+  * Half.com's commission. 
+  * <br/><br/>
+  * For most sellers, each month contains two pay periods: One
   * from the 1st to the 15th of the month, and one from the 16th to the last day of
   * the month. Payments are submitted to the seller's financial institution a certain
   * number of days after the current pay period ends (see the Half.com online help for

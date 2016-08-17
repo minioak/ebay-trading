@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,10 +8,7 @@ require_once 'AbstractRequestType.php';
 require_once 'ItemType.php';
 
 /**
-  * Defines a single new item and lists it on a specified eBay site.&nbsp;<b>Also for Half.com</b>.
-  * Returns the item ID for the new listing, and returns fees the seller will incur for the
-  * listing (not including the Final Value Fee, which cannot be calculated until
-  * the item is sold).
+  * Base request type for the <b>AddItem</b> call, which is used to create a single fixed-price, auction, classified ad, or Half.com listing.
   * 
  **/
 

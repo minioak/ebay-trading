@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -16,7 +16,7 @@ require_once 'EbatNs_ComplexType.php';
   * </ul>
   *             This container is returned from the GetItem family of calls only for the seller who listed the item.
   *    <br><br>
-  * You can find more information about using shipping rate tables in the Shipping chapter of the Trading API User's Guide.
+  * You can find more information about using shipping rate tables in the Shipping chapter of the eBay Features Guide.
   * 
  **/
 

@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -11,7 +11,7 @@ require_once 'CalculatedShippingRateOptionCodeType.php';
 require_once 'InsuranceOptionCodeType.php';
 
 /**
-  * This type is deprecated since <b>CalculatedShippingPreferences</b> are no longer maintained through the <b>CombinedPaymentPreferences</b> container in the <b>GetUserPreferences</b> and <b>SetUserPreferences</b> calls.
+  * This type is deprecated.
   * 
  **/
 

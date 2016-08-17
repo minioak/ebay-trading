@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,10 +7,11 @@
 require_once 'EbatNs_ComplexType.php';
 
 /**
-  * Indicates whether counter offers are allowed on best offers for 
-  * this category.
-  * Returned only if this category overrides the site default.
-  * Added for EbayMotors Pro users.
+  * Type defining the <b>eBayMotorsProCounterOfferEnabled</b> field that is returned under the <b>FeatureDefinitions</b> container if <code>eBayMotorsProCounterOfferEnabled</code> is used as a <b>FeatureID</b> value in the request, or if no <b>FeatureID</b> values are used in the request. This field is returned as an empty element (a boolean value is not returned) if one or more eBay API-enabled sites support counter offers to Best Offers for eBay Motors Classified Ad listings. Only eBay Motors Pro users are eligible to use eBay Motors Classified Ad listings.
+  * <br/><br/>
+  * To verify if a specific eBay site supports counter offers to Best Offers for eBay Motors Classified Ad listings (for most categories), look for a <code>true</code> value in the <b>SiteDefaults.eBayMotorsProCounterOfferEnabled</b> field.
+  * <br/><br/>
+  * To verify if a specific category on a specific eBay site supports counter offers to Best Offers for eBay Motors Classified Ad listings, pass in a <b>CategoryID</b> value in the request, and then look for a <code>true</code> value in the <b>eBayMotorsProCounterOfferEnabled</b> field of the corresponding <b>Category</b> node (match up the <b>CategoryID</b> values if more than one Category IDs were passed in the request).
   * 
  **/
 
