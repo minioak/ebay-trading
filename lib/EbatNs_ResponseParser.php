@@ -360,7 +360,7 @@ class EbatNs_ResponseParser
         {
             if ($current)
             {
-                if (count($typeInfoCurrent['elements']) == 0)
+                if ($typeInfoCurrent['elements'] === null || count($typeInfoCurrent['elements']) == 0)
                 {
                     $currentIsEmpty = false;
                     if (count($typeInfoCurrent['attributes']) ==
