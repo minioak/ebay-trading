@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,11 +8,15 @@ require_once 'AbstractResponseType.php';
 require_once 'DisputeType.php';
 
 /**
-  *         Returned after calling GetDisputeRequest. Returns the record of
+  *         Returns the record of
   *       a dispute, including the dispute state and other information.
-  *       <br><br>Both Sellers and Buyers can use the SellerClosedDispute in
+  *       <br><br>Both Sellers and Buyers can use the <b>SellerClosedDispute</b> in
   *       Platform Notifications to receive a notification when a dispute has been closed.
-  *       The notification includes the same data that is returned in the GetDispute response.
+  *       The notification includes the same data that is returned in the <b>GetDispute</b> response.
+  * <br/><br/>
+  * <span class="tablenote"><strong>Note:</strong>
+  * This call does not retrieve eBay money back guarantee cases.
+  * </span>
   * 
  **/
 

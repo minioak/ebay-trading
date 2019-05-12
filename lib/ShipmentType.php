@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -17,11 +17,11 @@ require_once 'ShipmentTrackingDetailsType.php';
 require_once 'ShipmentLineItemType.php';
 
 /**
-  * Type defining the <b>Shipment</b> container, which is used by 
-  * the seller in <b>CompleteSale</b> to provide shipping information. The 
-  * <b>Shipment</b> container is also returned in the  
-  * <b>GetSellingManagerSaleRecord</b> response.
-  * 
+  *         Type defining the <b>Shipment</b> container, which is used by 
+  *         the seller in <b>CompleteSale</b> to provide shipping information. The 
+  *         <b>Shipment</b> container is also returned in the  
+  *         <b>GetSellingManagerSaleRecord</b> response.
+  *       
  **/
 
 class ShipmentType extends EbatNs_ComplexType

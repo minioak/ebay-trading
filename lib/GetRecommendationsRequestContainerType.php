@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -10,8 +10,7 @@ require_once 'ItemType.php';
 require_once 'RecommendationEngineCodeType.php';
 
 /**
-  * Specifies the data for a single item and configures the recommendation engines to use
-  * when processing the item with GetItemRecommendations.
+  * This type is deprecated.
   * 
  **/
 

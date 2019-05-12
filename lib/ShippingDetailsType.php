@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -22,7 +22,7 @@ require_once 'ShipmentTrackingDetailsType.php';
 require_once 'RateTableDetailsType.php';
 
 /**
-  * Type defining the ShippingDetails container, which contains the shipping-related
+  * Type defining the <b>ShippingDetails</b> container, which contains the shipping-related
   * details for an item (pre-checkout) or order (post-checkout).
   * <br/><br/>
   *             <span class="tablenote">

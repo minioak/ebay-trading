@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -11,9 +11,8 @@ require_once 'PaginationType.php';
 
 /**
   * Requests a list of disputes the requester is involved in as buyer or seller.
-  * eBay Buyer Protection Item Not Received and Significantly Not As Described cases
-  * are not returned with this call. To retrieve eBay Buyer Protection cases, the
-  * getUserCases call of the Resolution Case Management API must be used instead.
+  * eBay Money Back Guarantee Item Not Received and Significantly Not As Described cases
+  * are not returned with this call. To retrieve eBay Money Back Guarantee cases, use the Resolution Case Management API <b>getUserCases</b> call.
   * 
  **/
 

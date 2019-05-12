@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -9,12 +9,7 @@ require_once 'ItemIDType.php';
 require_once 'DisputeIDType.php';
 
 /**
-  * Enables a seller who has opted into the automated Unpaid Item Assistant
-  * mechanism to disable the Unpaid Item Assistant at the order line item
-  * level. This call can be made whether or not a Unpaid Item dispute
-  * exists for the order line item. If a dispute has already been created by the
-  * Unpaid Item Assistant, it is converted to a "manual" dispute for the seller to
-  * manage like any other manually-created dispute.
+  * Enables a seller who has opted into the automated Unpaid Item Assistant mechanism to disable the Unpaid Item Assistant at the order line item level. This call can be made whether or not a Unpaid Item case exists for the order line item. If an Unpaid Item case has already been created by the Unpaid Item Assistant, it is converted to a "manual" case for the seller to manage like any other manually-created case.
   * 
  **/
 

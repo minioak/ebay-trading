@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,9 +7,6 @@
 require_once 'EbatNs_ComplexType.php';
 
 /**
-  * <span class="tablenote"><strong>Note:</strong>
-  * This type will be enabled with version 935. For those using versions older than 935, the <b>DeliveryStatus</b> container will not be returned.
-  * </span>
   * This type is used by the <b>DeliveryStatus</b> container, which will list the current status of whatever delivery method is being used (indicated in the <b>DigitalDeliverySelected.DeliveryMethod</b>field). Currently, the only supported delivery method is by email.
   * 
  **/

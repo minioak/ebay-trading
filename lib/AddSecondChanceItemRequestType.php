@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -11,8 +11,7 @@ require_once 'SecondChanceOfferDurationCodeType.php';
 require_once 'ItemIDType.php';
 
 /**
-  * Creates a new Second Chance Offer (that is, an offer for an unsold item)
-  * for one of that item's non-winning bidders.
+  * Used by the seller of an auction listing to provide a Second Chance Offer to one of that auction item's non-winning bidders. A Second Chance Offer is used by sellers whenever the seller was unable to complete the sale with the winning bidder (bidder didn't pay), or if the auction listing ended without the Reserve Price being met, or if that seller has multiple identical items for sale and wants to give other bidders a chance to purchase the item.
   * 
  **/
 

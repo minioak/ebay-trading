@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,10 +7,9 @@
 require_once 'EbatNs_ComplexType.php';
 
 /**
-  * Defines the SellerContactDetailsEnabled feature. If this field is present, 
-  * the category allows retrieval of seller-level contact information. The 
-  * field is returned as an empty element (e.g., a boolean value is not returned).
-  * Added for EbayMotors Pro users.
+  * This field is returned (as an empty element) if the site supports contacting 
+  * the seller for a Classified Ad listings. 
+  * This is for EbayMotors Pro users only.
   * 
  **/
 

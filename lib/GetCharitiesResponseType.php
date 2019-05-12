@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,7 +8,7 @@ require_once 'AbstractResponseType.php';
 require_once 'CharityInfoType.php';
 
 /**
-  * Contains information about charity nonprofit organizations that meet the
+  * Contains information about nonprofit organizations that meet the
   * criteria specified in the request.
   * 
  **/

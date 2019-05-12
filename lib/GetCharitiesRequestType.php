@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,10 +8,10 @@ require_once 'AbstractRequestType.php';
 require_once 'StringMatchCodeType.php';
 
 /**
-  * Searches for nonprofit charity organizations that meet the
+  * Searches for nonprofit organizations that meet the
   * criteria specified in the request.
   * It is recommended that you use at least one input filter, because this call
-  * no longer returns all charities when made without filters.
+  * no longer returns all nonprofit organizations when made without filters.
   * 
  **/
 

@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -11,8 +11,8 @@ require_once 'UserType.php';
 
 /**
   * Contains a list of the items listed by the seller specified as input. The list of
-  * items is returned in an ItemArrayType object, in which are returned zero, one, or
-  * multiple ItemType objects. Each ItemType object contains the detail data for one
+  * items is returned in an <b>ItemArrayType</b> object, in which are returned zero, one, or
+  * multiple <b>ItemType</b> objects. Each <b>ItemType</b> object contains the detail data for one
   * item listing.
   * 
  **/

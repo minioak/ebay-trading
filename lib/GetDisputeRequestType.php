@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -9,6 +9,10 @@ require_once 'DisputeIDType.php';
 
 /**
   * Retrieves the details of a specific eBay dispute corresponding to the supplied dispute ID.
+  * <br/><br/>
+  * <span class="tablenote"><strong>Note:</strong>
+  * This call does not retrieve eBay money back guarantee cases.
+  * </span>
   * 
  **/
 

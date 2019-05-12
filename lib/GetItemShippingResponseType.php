@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -10,7 +10,7 @@ require_once 'PickupInStoreDetailsType.php';
 
 /**
   * Contains the data returned by the call. The shipping details for the specified
-  * item are returned in a ShippingDetails object.
+  * item are returned in a <b>ShippingDetails</b> object.
   * 
  **/
 

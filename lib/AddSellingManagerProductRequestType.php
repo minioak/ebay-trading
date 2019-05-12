@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -9,8 +9,7 @@ require_once 'SellingManagerProductDetailsType.php';
 require_once 'SellingManagerProductSpecificsType.php';
 
 /**
-  * Creates a Selling Manager product. Sellers use Selling Manager products to store SYI forms for use
-  * as listing templates.
+  * The base request type of the <b>AddSellingManagerProduct</b> call, which is used to create a product or a group of product variations within the Selling Manager Pro system. Once a Selling Manager Pro product or production variation group is created, the product settings and product specifics can be transferred over into a Selling Manager Pro listing template with the <b>AddSellingManagerTemplate</b> call.
   * 
  **/
 

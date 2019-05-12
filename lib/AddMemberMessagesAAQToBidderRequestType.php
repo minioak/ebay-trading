@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,8 +8,7 @@ require_once 'AbstractRequestType.php';
 require_once 'AddMemberMessagesAAQToBidderRequestContainerType.php';
 
 /**
-  * Enables a seller to send up to 10 messages to bidders, or to users who have
-  * made offers via Best Offer, regarding an active item listing.
+  * The base request of the <b>AddMemberMessagesAAQToBidder</b> call, which allows a seller to send up to 10 messages to bidders/potential buyers regarding an active listing. These potential buyers may include those who have made a Best Offer on a listing.
   * 
  **/
 

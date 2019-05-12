@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,10 +7,6 @@
 require_once 'EbatNs_ComplexType.php';
 
 /**
-  * <span class="tablenote"><strong>Note:</strong>
-  * This type will be enabled with version 935. For those using versions older than 935, this type is not applicable.
-  * </span>
-  * <br>
   * This type is used to provide the name and email of both the purchaser of a digital gift card, and the recipient of the digital gift card.
   * 
  **/

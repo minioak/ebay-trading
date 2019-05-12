@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,12 +7,7 @@
 require_once 'EbatNs_ComplexType.php';
 
 /**
-  * A variable that contains specific information about the context of this error.
-  * For example, if you pass in an attribute set ID that does not match
-  * the specified category, the attribute set ID might be returned as an error parameter.
-  * Use error parameters to flag fields that users need to correct.
-  * Also use error parameters to distinguish between errors when multiple
-  * errors are returned.
+  * This type is used by the <b>ErrorParameters</b> container if one or more errors or warnings occur with the call, and if a specific request parameter has been pinpointed as the reason why the error or warning was triggered.
   * 
  **/
 

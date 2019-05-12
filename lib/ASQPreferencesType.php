@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,9 +7,7 @@
 require_once 'EbatNs_ComplexType.php';
 
 /**
-  * Enables a seller to add custom Ask Seller a Question (ASQ)
-  * subjects to display on the seller's Ask a Question page, or reset
-  * the custom subjects to the default values.
+  * This type is used by the <b>ASQPreferences</b> container to allow the seller to add custom Ask Seller a Question (ASQ) subjects to item listings, or to reset the custom subjects to the default eBay values.
   * 
  **/
 

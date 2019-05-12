@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -9,6 +9,9 @@ require_once 'MemberMessageExchangeArrayType.php';
 require_once 'PaginationResultType.php';
 
 /**
+  * Retrieves a list of the messages buyers have posted about your
+  * active item listings.
+  * 
  **/
 
 class GetMemberMessagesResponseType extends AbstractResponseType

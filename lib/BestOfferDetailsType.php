@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -10,10 +10,13 @@ require_once 'BestOfferStatusCodeType.php';
 require_once 'BestOfferTypeCodeType.php';
 
 /**
-  * Type defining the <b>BestOfferDetails</b> container, which consists 
+  * Type defining the <b>BestOfferDetails</b> container, which consists
   * of Best Offer details associated with an item. The <b>BestOfferEnabled</b>
-  * field in this container is used by Add/Revise/Relist calls to enable the Best Offer
-  * feature on a listing.
+  * field in this container is used by <b>Add</b>/<b>Revise</b>/<b>Relist</b> calls to enable the Best Offer feature on a listing.
+  * <br/><br/>
+  * <span class="tablenote"><b>Note: </b>
+  * The Best Offer feature is not available for auction listings.
+  * </span>
   * 
  **/
 

@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,13 +8,13 @@ require_once 'EbatNs_ComplexType.php';
 require_once 'AmountType.php';
 
 /**
-  * Type defining the <b>BuyingSummary</b> container returned in 
-  * <b>GetMyeBayBuying</b>. The <b>BuyingSummary</b> container 
-  * consists of data that summarizes the buyer's recent buying activity, including the 
-  * number of items bid on, the number of items buyer is winning, and the number of items 
-  * the buyer has won. The <b>BuyingSummary</b> container is only returned if
-  * the <b>BuyingSummary.Include</b> field is included in the <b>GetMyeBayBuying</b> request and set to 
-  * 'true'. 
+  * Type defining the <b>BuyingSummary</b> container returned in
+  * <b>GetMyeBayBuying</b>. The <b>BuyingSummary</b> container
+  * consists of data that summarizes the buyer's recent buying activity, including the
+  * number of items the user has bid on, the number of items the user is winning, and the number of items
+  * the user has won. The <b>BuyingSummary</b> container is only returned if
+  * the <b>BuyingSummary.Include</b> field is included in the <b>GetMyeBayBuying</b> request and set to
+  * <code>true</code>.
   * 
  **/
 

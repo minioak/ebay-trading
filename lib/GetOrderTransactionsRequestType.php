@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -10,7 +10,7 @@ require_once 'OrderIDArrayType.php';
 require_once 'TransactionPlatformCodeType.php';
 
 /**
-  * Retrieves information about one or more orders based on OrderIDs, ItemIDs, or SKU values. &nbsp;<b>Also for Half.com</b>.
+  * Retrieves information about one or more orders based on <b>OrderIDs</b>, <b>ItemIDs</b>, or <b>SKU</b> values.&nbsp;<b>Also for Half.com</b>.
   * 
  **/
 

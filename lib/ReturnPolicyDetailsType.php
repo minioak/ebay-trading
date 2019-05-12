@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -15,7 +15,12 @@ require_once 'ShippingCostPaidByDetailsType.php';
 require_once 'RestockingFeeValueDetailsType.php';
 
 /**
-  * Type for the return policy details of an item.
+  * Type defining the <b>ReturnPolicyDetails</b> container, which is returned in <b>GeteBayDetails</b>, and provides the seller with the Return Policy features (and applicable values) that are supported by the listing site.
+  * <br/><br/>
+  * <span class="tablenote"><b>Note: </b>
+  * This container is only returned if <b>ReturnPolicyDetails</b> is included as a <b>DetailName</b>
+  * filter in the call request, or if no <b>DetailName</b> filters are used in the request.
+  * </span>
   * 
  **/
 

@@ -1003,8 +1003,8 @@ class EbatNs_Session {
 		$this->setUseStandardLogger($cfg['use_standard_logger']);
 	}
   }
-  
-    function InitFromArray($cfg)
+
+  function InitFromArray($cfg)
   {
     $this->_keys['test'] = array($cfg['app-key-test'], $cfg['dev-key-test'], $cfg['cert-id-test']);
     $this->_keys['prod'] = array($cfg['app-key-prod'], $cfg['dev-key-prod'], $cfg['cert-id-prod']);
@@ -1092,10 +1092,9 @@ class EbatNs_Session {
         $this->_props['PageSize'] = 200;
     }
     if (isset($cfg['use_standard_logger'])) {
-		$this->setUseStandardLogger($cfg['use_standard_logger']);
-	}
+    $this->setUseStandardLogger($cfg['use_standard_logger']);
   }
-
+  }
   /**
    * Writes a log-message to the logFile
    * 

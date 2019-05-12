@@ -351,7 +351,7 @@ class EbatNs_Client
 	// callusage
 	protected function _incrementApiUsage($apiCall)
 	{
-		if (!isset($this->_loggingOptions['LOG_API_USAGE']))
+		if (!isset($this->_loggingOptions['LOG_API_USAGE']))	
 			return;
 		
 		$this->_callUsage[$apiCall] = $this->_callUsage[$apiCall] + 1;
@@ -719,12 +719,12 @@ class EbatNs_Client
 		if ( $responseMsg )
 		{
 			$this->_startTp('Decoding SOAP Message');
-			$ret =  $this->decodeMessage( $method, $responseMsg, $parseMode );
+			$ret = $this->decodeMessage( $method, $responseMsg, $parseMode );
 			$this->_stopTp('Decoding SOAP Message');
 		}
 		else
 		{
-			$ret =  $this->_currentResult;
+			$ret = $this->_currentResult;
 		}
 		
 		return $ret;
@@ -933,12 +933,12 @@ class EbatNs_Client
 		if ( $responseMsg )
 		{
 			$this->_startTp('Decoding SOAP Message');
-			$ret =  $this->decodeMessage( $method, $responseMsg, $parseMode );
+			$ret = $this->decodeMessage( $method, $responseMsg, $parseMode );
 			$this->_stopTp('Decoding SOAP Message');
 		}
 		else
 		{
-			$ret =  $this->_currentResult;
+			$ret = $this->_currentResult;
 		}
 		
 		return $ret;

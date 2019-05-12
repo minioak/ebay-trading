@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -11,10 +11,7 @@ require_once 'MaximumUnpaidItemStrikesInfoType.php';
 require_once 'MaximumBuyerPolicyViolationsType.php';
 
 /**
-  * Type defining the <b>BuyerRequirementDetails</b> container, which allows the 
-  * seller to set buyer requirements at the listing level. For the corresponding listing, 
-  * all buyer requirement values/settings will overwrite values/settings in Buyer Requirements 
-  * preferences in My eBay.
+  * Type defining the <b>BuyerRequirementDetails</b> container, which allows the seller to set buyer requirements at the listing level. For the corresponding listing, all buyer requirement values/settings will overwrite values/settings in Buyer Requirements preferences in My eBay.
   * 
  **/
 

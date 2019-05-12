@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -10,8 +10,7 @@ require_once 'PaginationType.php';
 require_once 'TransactionPlatformCodeType.php';
 
 /**
-  * Retrieves order line item information for a specified <b>ItemID</b>. &
-  * nbsp;<b>Also for Half.com</b>. The call returns zero, one, or
+  * Retrieves order line item information for a specified <b>ItemID</b>.&nbsp;<b>Also for Half.com</b>. The call returns zero, one, or
   * multiple order line items, depending on the number of items sold from the listing.
   * <br><br>
   * You can retrieve order line item data for a specific time range or

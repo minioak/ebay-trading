@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -60,6 +60,7 @@ require_once 'DiscountPriceInfoType.php';
 require_once 'QuantityInfoType.php';
 require_once 'SellerProfilesType.php';
 require_once 'ShippingServiceCostOverrideListType.php';
+require_once 'ShippingOverrideType.php';
 require_once 'ShipPackageDetailsType.php';
 require_once 'QuantityRestrictionPerBuyerInfoType.php';
 require_once 'UnitInfoType.php';
@@ -71,10 +72,10 @@ require_once 'DigitalGoodInfoType.php';
   * Contains the data defining one item. A seller populates an object of
   * this type at listing time with the definition of a new item. A seller
   * also uses an object of this type to relist or revise an item. Calls
-  * that retrieve item data (such as the GetSellerList call) return an object of
+  * that retrieve item data (such as the <b>GetSellerList</b> call) return an object of
   * this type, filled with the item's data. Some fields are applicable both
   * to eBay listings and Half.com listings. Some fields are only applicable to eBay listings,
-  * and others are only applicable to Half.com listings.
+  *         and others are only applicable to Half.com listings.
   * 
  **/
 
@@ -739,6 +740,11 @@ class ItemType extends EbatNs_ComplexType
 	* @var ShippingServiceCostOverrideListType
 	**/
 	protected $ShippingServiceCostOverrideList;
+
+	/**
+	* @var ShippingOverrideType
+	**/
+	protected $ShippingOverride;
 
 	/**
 	* @var ShipPackageDetailsType
@@ -1918,6 +1924,14 @@ class ItemType extends EbatNs_ComplexType
 				array(
 					'required' => false,
 					'type' => 'ShippingServiceCostOverrideListType',
+					'nsURI' => 'urn:ebay:apis:eBLBaseComponents',
+					'array' => false,
+					'cardinality' => '0..1'
+				),
+				'ShippingOverride' =>
+				array(
+					'required' => false,
+					'type' => 'ShippingOverrideType',
 					'nsURI' => 'urn:ebay:apis:eBLBaseComponents',
 					'array' => false,
 					'cardinality' => '0..1'
@@ -4404,6 +4418,22 @@ class ItemType extends EbatNs_ComplexType
 	function setShippingServiceCostOverrideList($value)
 	{
 		$this->ShippingServiceCostOverrideList = $value;
+	}
+
+	/**
+	 * @return ShippingOverrideType
+	 **/
+	function getShippingOverride()
+	{
+		return $this->ShippingOverride;
+	}
+
+	/**
+	 * @return void
+	 **/
+	function setShippingOverride($value)
+	{
+		$this->ShippingOverride = $value;
 	}
 
 	/**

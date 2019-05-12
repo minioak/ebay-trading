@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -9,6 +9,7 @@ require_once 'EbatNs_FacetType.php';
 class ValueTypeCodeType extends EbatNs_FacetType
 {
 	const CodeType_Decimal = 'Decimal';
+	const CodeType_Numeric = 'Numeric';
 	const CodeType_Text = 'Text';
 	const CodeType_ISBN = 'ISBN';
 	const CodeType_UPC = 'UPC';

@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,8 +8,11 @@ require_once 'EbatNs_ComplexType.php';
 require_once 'DisputeType.php';
 
 /**
-  * Represents a list of disputes. Can hold zero or more Dispute
-  * types, each of which describes a dispute.
+  * Type used by the <b>DisputeArray</b> container that is returned in the response of the <b>GetUserDisputes</b>. The <b>DisputeArray</b> container holds an array of one or more disputes that match the filter criteria in the call request.
+  * <br/><br/>
+  * <span class="tablenote"><strong>Note:</strong>
+  * These are not eBay Money Back Guarantee cases.
+  * </span>
   * 
  **/
 

@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,8 +7,8 @@
 require_once 'EbatNs_ComplexType.php';
 require_once 'ListingTipType.php';
 
-/** 
-  *       (out) Contains a list of tips on improving a listing's details, if any. 
+/**
+  * This type is deprecated.
   * 
  **/
 

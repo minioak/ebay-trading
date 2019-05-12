@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -9,10 +9,7 @@ require_once 'AddressType.php';
 require_once 'VATDetailsType.php';
 
 /**
-  *   Displays the seller's information (in a business card format) 
-  *   as part of the data returned if the seller's <b>SellerBusinessCodeType</b> is set to 'Commercial'. Note that this 
-  *   option is only available for sites that have Business Seller 
-  *   options enabled.
+  *   Type used by the <b>BusinessSellerDetails</b> container, which is returned in an <b>Item</b> node if the item's seller is registered on eBay as a Business Seller.
   * 
  **/
 

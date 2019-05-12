@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,10 +7,10 @@
 require_once 'EbatNs_ComplexType.php';
 
 /**
-  * Type defining the <strong>PickupOptions</strong> container, which consists of an In-Store pickup method and the priority of the pickup method. 
+  * Type defining the <strong>PickupOptions</strong> container, which consists of a pickup method and the priority of the pickup method.
   * <br/><br/>
   * <span class="tablenote">
-  * <strong>Note:</strong> At this time, the In-Store Pickup feature is generally only available to large retail merchants, and can only be applied to multi-quantity, fixed-price listings. 
+  * <strong>Note:</strong> At this time, the In-Store Pickup and Click and Collect features are generally only available to large retail merchants, and can only be applied to multi-quantity, fixed-price listings.
   * </span>
   * 
  **/

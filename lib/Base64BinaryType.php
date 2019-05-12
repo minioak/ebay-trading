@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,9 +7,9 @@
 require_once 'EbatNs_ComplexType.php';
 
 /**
-  * Used for storing an optional reference ID to the binary attachment
+  * This type is a binary-to-text encoding scheme that represents binary data in an ASCII string format by translating it into a radix-64 representation. The term "Base64" originates from a specific MIME content transfer encoding.
   * 
-  * Stores an optional reference ID to the binary attachment.
+  * This optional attribute allows the binary attachment to be named.
   * 
  **/
 

@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,8 +7,7 @@
 require_once 'EbatNs_ComplexType.php';
 
 /**
-  * Indicates whether the category supports the use of payment method checkOut
-  * for Classified Ad format listings.Added for EbayMotors Pro users.
+  * Type defining the <b>eBayMotorsProPaymentMethodCheckOutEnabled</b> field that is returned under the <b>FeatureDefinitions</b> container if <code>eBayMotorsProPaymentMethodCheckOutEnabled</code> is used as a <b>FeatureID</b> value in the request, or if no <b>FeatureID</b> values are used in the request. This field is returned as an empty element (a boolean value is not returned) if one or more eBay API-enabled sites support the display of accepted payment methods for eBay Motors Classified Ad listings. Only eBay Motors Pro users are eligible to use eBay Motors Classified Ad listings.
   * 
  **/
 

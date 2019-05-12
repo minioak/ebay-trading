@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -10,21 +10,30 @@ require_once 'PaginationType.php';
 
 /**
   * <b>Half.com only.</b>&nbsp;Retrieves a summary of pending or paid payments that Half.com created for the
-  * seller identified by the authentication token in the request. Only retrieves
-  * payments that occurred within a particular pay period. Each payment is for one
+  * seller identified by the authentication token in the request. 
+  * This call retrieves only
+  * payments that occurred within a particular pay period. 
+  * <br/><br/>
+  * Each payment is for one
   * order line item in one order. An order can contain order line items for
   * multiple items from multiple sellers, but this call only retrieves payments that
   * are relevant to one seller. The financial value of a payment is typically based on
   * an amount that a buyer paid to Half.com for an order line item, with adjustments for
-  * shipping costs and Half.com's commission. For most sellers, each month contains
+  * shipping costs and Half.com's commission. 
+  * <br/><br/>
+  * For most sellers, each month contains
   * two pay periods: One from the 1st to the 15th of the month, and one from the 16th
   * to the last day of the month. Sellers can refer to their account information on
   * the Half.com site to determine their pay periods. (You cannot retrieve a seller's
-  * pay periods by using eBay API.) When a buyer makes a purchase and an
+  * pay periods by using eBay API.) 
+  * <br/><br/>
+  * When a buyer makes a purchase and an
   * order is created, Half.com creates a payment for the seller and marks it as
-  * Pending in the seller's Half.com account. Within a certain number of days after
+  * <b>Pending</b> in the seller's Half.com account. Within a certain number of days after
   * the pay period ends, Half.com settles payments for that period and marks each
-  * completed payment as Paid. See the Half.com Web site online help for more
+  * completed payment as Paid. 
+  * <br/><br/>
+  * See the Half.com Web site online help for more
   * information about how payments are managed.
   * 
  **/

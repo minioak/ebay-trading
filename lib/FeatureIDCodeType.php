@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -136,6 +136,8 @@ class FeatureIDCodeType extends EbatNs_FacetType
 	const CodeType_AdditionalCompatibilityEnabled = 'AdditionalCompatibilityEnabled';
 	const CodeType_PickupDropOffEnabled = 'PickupDropOffEnabled';
 	const CodeType_DigitalGoodDeliveryEnabled = 'DigitalGoodDeliveryEnabled';
+	const CodeType_EpidSupported = 'EpidSupported';
+	const CodeType_KTypeSupported = 'KTypeSupported';
 
 	/**
 	 * @return 

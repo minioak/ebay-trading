@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,10 +8,9 @@ require_once 'AmountType.php';
 require_once 'RefundLineTypeCodeType.php';
 
 /**
-  * This type is no longer used. 
+  * This type is deprecated.
   * 
-  *  This field is no longer used. 
-  * </span>
+  *  This field is deprecated. 
   * 
  **/
 

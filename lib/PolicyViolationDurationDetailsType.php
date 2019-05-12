@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,7 +7,8 @@
 require_once 'EbatNs_ComplexType.php';
 require_once 'PeriodCodeType.php';
 
-/**[Selling] The details about the range used to calculate policy violations.
+/**Type used by the <b>PolicyViolationDuration</b> container. A <b>PolicyViolationDuration</b> container is returned for each supported period that a seller may specify through the <b>BuyerRequirementDetails.MaximumBuyerPolicyViolations</b> container in an add/revise/relist call. The <b>BuyerRequirementDetails.MaximumBuyerPolicyViolations</b> container can be used by the seller to limit the number of buyer policy violations a buyer may have during a set period before being restricted from buying an item.
+  * 
  **/
 
 class PolicyViolationDurationDetailsType extends EbatNs_ComplexType

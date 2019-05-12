@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -7,7 +7,7 @@
 require_once 'AbstractRequestType.php';
 
 /**
-  * Retrieves a session ID that identifies a user and your application when you make a FetchToken request.
+  * Retrieves a session ID that identifies a user and your application when you make a <b>FetchToken</b> request.
   * 
  **/
 

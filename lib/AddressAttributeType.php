@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -10,7 +10,7 @@ require_once 'AddressAttributeCodeType.php';
 /**
   * This type is used to display the value of the <b>type</b> attribute of the <b>AddressAttribute</b> field.
   * 
-  * The only supported value for this attribute is 'ReferenceNumber', but in the future, other address attributes may be supported.
+  * The only supported value for this attribute is <code>ReferenceNumber</code>, but in the future, other address attributes may be supported. The <code>ReferenceNumber</code> is a unique identifier for a 'Click and Collect' order. Click and Collect orders are only available on the eBay UK and eBay Australia sites.
   * 
  **/
 

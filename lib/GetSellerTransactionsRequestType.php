@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -14,7 +14,7 @@ require_once 'InventoryTrackingMethodCodeType.php';
   * Retrieves order line item (transaction) information for the user for which the
   * call is made, and not for any other user.&nbsp;<b>Also for
   * Half.com</b>. (To retrieve order line items for another seller's listings, use
-  * GetItemTransactions.)
+  * <b>GetItemTransactions</b>.)
   * 
  **/
 

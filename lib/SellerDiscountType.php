@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -8,7 +8,7 @@ require_once 'EbatNs_ComplexType.php';
 require_once 'AmountType.php';
 
 /**
-  * Type that defines the <b>SellerDiscount</b> container, which contains the ID, 
+  * Type that defines the <b>SellerDiscount</b> container, which contains the ID,
   * name, and amount of the seller discount.
   * 
  **/

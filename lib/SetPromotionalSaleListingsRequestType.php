@@ -1,5 +1,5 @@
 <?php
-/* Generated on 8/11/15 3:23 AM by globalsync
+/* Generated on 10.08.16 17:04 by globalsync
  * $Id: $
  * $Log: $
  */
@@ -9,7 +9,7 @@ require_once 'ModifyActionCodeType.php';
 require_once 'ItemIDArrayType.php';
 
 /**
-  * Enables the seller to change the item listings that are affected by a promotional sale. 
+  * Enables the seller to change the item listings that are affected by a promotional sale.
   * 
  **/
 
