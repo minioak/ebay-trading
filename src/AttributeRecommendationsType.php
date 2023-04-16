@@ -1,0 +1,69 @@
+<?php
+
+namespace InTradeSys\eBay\trading;
+
+/*
+ * This class was generated from a WSDL file from March 29, 2023, 11:17 am.
+ * Executed by globalsync.
+ * Provided and maintained by:
+ *
+ *  InTradeSys GmbH
+ *  Dillenburger Str. 75
+ *  D-51105 Cologne
+ *  ---
+ *  https://www.intradesys.com
+ *
+ *
+ * For paid support options ranging from on-demand,
+ * best effort to 24/7 SLAs, please contact us anytime:
+ *  ebay.api@InTradeSys.com
+ *
+ * For more information, visit:
+ *  https://sdk.intradesys.com
+ */
+
+
+/**
+ * This type is deprecated.
+ **/
+class AttributeRecommendationsType extends EbatNs_ComplexType
+{
+    const TAG = 'AttributeRecommendationsType';
+    const NAME = 'AttributeRecommendationsType';
+    const XMLNS = 'urn:ebay:apis:eBLBaseComponents';
+
+    /**
+     * @var AttributeSetArrayType|null
+     */
+    protected $AttributeSetArray = null;
+
+
+    /**
+     * @return AttributeSetArrayType|null|mixed Depending on the assigned data converter: mixed
+     */
+    public function getAttributeSetArray()
+    {
+        return $this->_dc($this->AttributeSetArray, 'AttributeSetArray');
+    }
+
+    /**
+     * @param AttributeSetArrayType|null $value
+     * @return void
+     */
+    public function setAttributeSetArray($value)
+    {
+        $this->AttributeSetArray = $value;
+    }
+    
+    /**
+     * Register child elements and attributes
+     */
+    public static function _register()
+    {
+        self::assignElements(['AttributeSetArray' => ['type' => 'AttributeSetArrayType', 'xmlns' => self::XMLNS]], parent::NAME);
+        self::assignAttributes([]);
+    }
+
+}
+
+AttributeRecommendationsType::_register();
